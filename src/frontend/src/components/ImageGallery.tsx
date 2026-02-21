@@ -3,6 +3,42 @@ import { Dialog, DialogContent, DialogTrigger } from './ui/dialog';
 
 const images = [
   {
+    src: '/assets/517620380_1306336444832099_8194069313658765999_n.jpg',
+    alt: 'Cardio Equipment Area',
+    title: 'Cardio Zone',
+    description: 'Modern cardio equipment with entertainment systems',
+  },
+  {
+    src: '/assets/516865380_1306336354832108_3912420931968401456_n.jpg',
+    alt: 'Weight Training Floor',
+    title: 'Weight Training',
+    description: 'Comprehensive free weight and machine area',
+  },
+  {
+    src: '/assets/516502719_1306343131498097_2361034153104414808_n.jpg',
+    alt: 'Facility Exterior',
+    title: 'Our Location',
+    description: 'Bodyshape Fitness Center entrance and parking',
+  },
+  {
+    src: '/assets/516245078_1306336264832117_2368290094586174251_n.jpg',
+    alt: 'Free Weights Section',
+    title: 'Free Weights',
+    description: 'Complete free weight training area',
+  },
+  {
+    src: '/assets/518270242_1306336364832107_8264580889139094172_n.jpg',
+    alt: 'Strength Training Equipment',
+    title: 'Strength Training',
+    description: 'Professional-grade strength equipment',
+  },
+  {
+    src: '/assets/517940772_1306336431498767_8407149108597182872_n.jpg',
+    alt: 'Main Training Floor',
+    title: 'Training Floor',
+    description: 'Spacious main floor with diverse equipment',
+  },
+  {
     src: '/assets/348s (1).jpg',
     alt: 'Free Weight Area',
     title: 'Free Weights',
@@ -27,12 +63,6 @@ const images = [
     description: 'Professional-grade plate-loaded equipment',
   },
   {
-    src: '/assets/generated/cardio-equipment.dim_800x600.png',
-    alt: 'Cardio Zone',
-    title: 'Cardio Zone',
-    description: 'State-of-the-art cardio equipment for all fitness levels',
-  },
-  {
     src: '/assets/348s (8).jpg',
     alt: 'Training Floor',
     title: 'Training Floor',
@@ -43,36 +73,6 @@ const images = [
     alt: 'Functional Training',
     title: 'Functional Training',
     description: 'Dedicated functional training and boxing area',
-  },
-  {
-    src: '/assets/348s (4).jpg',
-    alt: 'Leg Press Equipment',
-    title: 'Leg Training',
-    description: 'Heavy-duty leg press and lower body equipment',
-  },
-  {
-    src: '/assets/348s.jpg',
-    alt: 'Main Gym Floor',
-    title: 'Main Floor',
-    description: 'Open gym floor with diverse equipment selection',
-  },
-  {
-    src: '/assets/348s (3).jpg',
-    alt: 'Cardio and Strength',
-    title: 'Mixed Training Area',
-    description: 'Combined cardio and strength training space',
-  },
-  {
-    src: '/assets/348s (2).jpg',
-    alt: 'Quality Equipment',
-    title: 'Quality Equipment',
-    description: 'State-of-the-art gym equipment and machines',
-  },
-  {
-    src: '/assets/generated/gallery-fill.dim_800x600.png',
-    alt: 'Gym Facility',
-    title: 'Facility View',
-    description: 'Our well-equipped training facility',
   },
 ];
 

@@ -1,7 +1,7 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-21T03:35:28.655Z",
+  "generatedAt": "2026-02-21T18:23:35.899Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
@@ -11,14 +11,14 @@
     "implemented": 1,
     "items": [
       {
-        "id": "REQ-60",
-        "summary": "In the homepage hero section (frontend/src/pages/Home.tsx), apply the uploaded Bodyshape Fitness 20 Year Anniversary image (86b32a34-8ef3-4143-8e81-c566b3678f98.png) as the full background covering the entire hero section, modifying CSS to ensure the image fills the background area completely with appropriate sizing (cover/contain) and positioning (center)",
+        "id": "REQ-1",
+        "summary": "Change the --text-muted CSS custom property from red back to silver in both light and dark theme modes in frontend/src/index.css",
         "status": "implemented",
         "plannedFiles": [
-          "frontend/src/pages/Home.tsx"
+          "frontend/src/index.css"
         ],
         "matchedFiles": [
-          "frontend/src/pages/Home.tsx"
+          "frontend/src/index.css"
         ]
       }
     ]
@@ -28,7 +28,7 @@
     "feature_evidence.json",
     "frontend-file-summaries.txt",
     "frontend-implementation-plan.json",
-    "frontend/src/pages/Home.tsx",
+    "frontend/src/index.css",
     "project_state.json",
     "scratch/component-selection.json",
     "spec.md",

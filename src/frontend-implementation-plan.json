@@ -1,22 +1,21 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Make 20 Year Anniversary image the full background",
+  "title": "Change red muted text to silver",
   "requirements": [
     {
-      "id": "REQ-60",
-      "summary": "Apply the uploaded 20 Year Anniversary image (86b32a34-8ef3-4143-8e81-c566b3678f98.png) as a full background covering the entire hero section in the homepage",
+      "id": "REQ-1",
+      "summary": "Update the --text-muted CSS custom property from red to silver in both light and dark theme modes",
       "acceptanceCriteria": [
-        "The 20 Year Anniversary image (86b32a34-8ef3-4143-8e81-c566b3678f98.png) displays as the full background of the hero section",
-        "The background image covers the entire hero section area",
-        "Foreground text and content remain readable over the background image",
-        "Background image is properly sized and positioned using CSS background properties"
+        "The --text-muted variable in light mode uses a silver/gray color value",
+        "The --text-muted variable in dark mode uses a silver/gray color value",
+        "Smaller text elements that use the muted text color appear in silver instead of red"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/pages/Home.tsx",
+          "path": "frontend/src/index.css",
           "operation": "modify",
-          "description": "Modify the hero section to use the uploaded 20 Year Anniversary image (frontend/public/assets/86b32a34-8ef3-4143-8e81-c566b3678f98.png) as a full background. Update the hero container to use CSS background-image with background-size: cover, background-position: center, and background-repeat: no-repeat. Ensure foreground text remains readable by adding appropriate text shadows or overlays if needed. Remove or adjust any existing background styling that conflicts with the full background image approach."
+          "description": "Change the --text-muted CSS custom property from its current red color value to a silver/gray color value in both the light theme (root selector) and dark theme (.dark selector). Use OKLCH color values consistent with the existing color system, selecting an appropriate lightness and chroma to create a neutral silver/gray tone that maintains readability for muted text elements."
         }
       ]
     }

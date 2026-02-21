@@ -1,11 +1,9 @@
 # Specification
 
 ## Summary
-**Goal:** Make the 20 Year Anniversary image the full background of the homepage hero section.
+**Goal:** Change the muted text color from red back to silver in the application's color scheme.
 
 **Planned changes:**
-- Apply the 20 Year Anniversary image (86b32a34-8ef3-4143-8e81-c566b3678f98.png) as the full background of the hero section
-- Update CSS to ensure the background image covers the entire hero area with proper sizing and positioning
-- Ensure foreground text remains readable over the background
+- Update the --text-muted CSS custom property to use silver/gray color values in both light and dark theme modes
 
-**User-visible outcome:** The homepage hero section displays the 20 Year Anniversary image as a full background, creating a visually prominent celebration of the gym's milestone.
+**User-visible outcome:** Smaller text elements throughout the application will display in silver instead of red, providing better visual hierarchy and readability.

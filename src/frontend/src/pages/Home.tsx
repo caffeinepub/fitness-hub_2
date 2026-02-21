@@ -1,4 +1,4 @@
-import { Clock, Dumbbell, Users, Award, PartyPopper, Trophy, Star, Target, Heart, Zap, Shield, User } from 'lucide-react';
+import { Clock, Dumbbell, Users, Award, Trophy, Star, Target, Heart, Zap, Shield, User } from 'lucide-react';
 import ImageGallery from '../components/ImageGallery';
 import TestimonialsSection from '../components/TestimonialsSection';
 import { Card, CardContent } from '../components/ui/card';
@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative h-[600px] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[700px] flex items-center justify-center overflow-hidden">
         {/* Background Image - Full Coverage */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -17,35 +17,11 @@ export default function Home() {
           }}
         />
         {/* Subtle overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-background/60 via-background/30 to-transparent z-10" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/20 to-background/60 z-10" />
         
         <div className="container mx-auto px-4 relative z-20">
-          <div className="max-w-2xl">
-            {/* 20th Anniversary Badge */}
-            <Badge className="mb-4 px-4 py-2 text-base bg-gradient-to-r from-accent-brand to-accent-secondary text-white border-0 shadow-xl">
-              <PartyPopper className="h-5 w-5 mr-2" />
-              Celebrating 20 Years of Excellence!
-            </Badge>
-            
-            <h1 className="text-5xl md:text-7xl font-display font-black mb-6 leading-tight drop-shadow-lg">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-brand to-accent-secondary">
-                Bodyshape Fitness
-              </span>
-            </h1>
-            <p className="text-xl md:text-2xl text-foreground mb-8 font-medium drop-shadow-md">
-              Independence, Kentucky's premier 24/7 fitness facility. Transform your body, transform your life.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <button className="px-8 py-4 bg-gradient-to-r from-accent-brand to-accent-secondary text-white font-bold text-lg rounded-xl hover:opacity-90 transition-opacity shadow-xl shadow-accent-brand/30">
-                Get Started
-              </button>
-              <a
-                href="tel:363-8900"
-                className="px-8 py-4 bg-background/90 backdrop-blur text-foreground font-bold text-lg rounded-xl hover:bg-background transition-colors border-2 border-border inline-block"
-              >
-                Call Us
-              </a>
-            </div>
+          <div className="max-w-3xl mx-auto text-center">
+            {/* Hero content removed as per requirements */}
           </div>
         </div>
       </section>
@@ -77,7 +53,7 @@ export default function Home() {
               
               <div className="md:col-span-2">
                 <div className="mb-4">
-                  <Badge className="mb-2 px-3 py-1 bg-gradient-to-r from-accent-brand to-accent-secondary text-white border-0">
+                  <Badge className="mb-2 px-3 py-1 bg-gradient-to-r from-accent-brand to-accent-secondary text-background border-0">
                     <User className="h-4 w-4 mr-1" />
                     Manager
                   </Badge>
@@ -107,7 +83,7 @@ export default function Home() {
             <CardContent className="p-6">
               <div className="flex items-start gap-4">
                 <div className="bg-gradient-to-br from-accent-brand to-accent-secondary p-3 rounded-xl">
-                  <Dumbbell className="h-6 w-6 text-white" />
+                  <Dumbbell className="h-6 w-6 text-background" />
                 </div>
                 <div>
                   <h3 className="font-bold text-lg mb-2">Modern Equipment</h3>
@@ -123,7 +99,7 @@ export default function Home() {
             <CardContent className="p-6">
               <div className="flex items-start gap-4">
                 <div className="bg-gradient-to-br from-accent-brand to-accent-secondary p-3 rounded-xl">
-                  <Clock className="h-6 w-6 text-white" />
+                  <Clock className="h-6 w-6 text-background" />
                 </div>
                 <div>
                   <h3 className="font-bold text-lg mb-2">24/7 Access</h3>
@@ -139,7 +115,7 @@ export default function Home() {
             <CardContent className="p-6">
               <div className="flex items-start gap-4">
                 <div className="bg-gradient-to-br from-accent-brand to-accent-secondary p-3 rounded-xl">
-                  <Award className="h-6 w-6 text-white" />
+                  <Award className="h-6 w-6 text-background" />
                 </div>
                 <div>
                   <h3 className="font-bold text-lg mb-2">20 Years Strong</h3>
@@ -256,41 +232,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 20th Anniversary Celebration Section */}
-      <section className="container mx-auto px-4 mb-20">
-        <div className="bg-gradient-to-br from-accent-brand/10 via-accent-secondary/10 to-accent-brand/5 rounded-3xl p-8 md:p-12 border-2 border-accent-brand/30 shadow-2xl">
-          <div className="text-center">
-            <div className="inline-flex items-center justify-center gap-2 mb-4">
-              <PartyPopper className="h-12 w-12 text-accent-brand" />
-            </div>
-            <h2 className="text-4xl md:text-5xl font-display font-black mb-4">
-              Celebrating <span className="text-accent-brand">20 Years</span>
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-              Since 2005, Bodyshape Fitness has been Independence's trusted fitness destination. Thank you for two decades of support!
-            </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-display font-black text-accent-brand mb-2">20</div>
-                <div className="text-sm text-muted-foreground">Years Strong</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-display font-black text-accent-brand mb-2">24/7</div>
-                <div className="text-sm text-muted-foreground">Always Open</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-display font-black text-accent-brand mb-2">1000+</div>
-                <div className="text-sm text-muted-foreground">Happy Members</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-display font-black text-accent-brand mb-2">#1</div>
-                <div className="text-sm text-muted-foreground">In Northern KY</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Facility Features */}
       <section className="container mx-auto px-4 mb-20">
         <div className="text-center mb-12">
@@ -306,7 +247,7 @@ export default function Home() {
           <Card className="bg-card border-2 border-border hover:border-accent-brand/50 transition-all hover:shadow-xl">
             <CardContent className="p-6 text-center">
               <div className="bg-gradient-to-br from-accent-brand to-accent-secondary p-4 rounded-2xl inline-block mb-4">
-                <Dumbbell className="h-8 w-8 text-white" />
+                <Dumbbell className="h-8 w-8 text-background" />
               </div>
               <h3 className="font-bold text-lg mb-2">Free Weights</h3>
               <p className="text-sm text-muted-foreground">
@@ -318,7 +259,7 @@ export default function Home() {
           <Card className="bg-card border-2 border-border hover:border-accent-brand/50 transition-all hover:shadow-xl">
             <CardContent className="p-6 text-center">
               <div className="bg-gradient-to-br from-accent-brand to-accent-secondary p-4 rounded-2xl inline-block mb-4">
-                <Zap className="h-8 w-8 text-white" />
+                <Zap className="h-8 w-8 text-background" />
               </div>
               <h3 className="font-bold text-lg mb-2">Cardio Equipment</h3>
               <p className="text-sm text-muted-foreground">
@@ -330,7 +271,7 @@ export default function Home() {
           <Card className="bg-card border-2 border-border hover:border-accent-brand/50 transition-all hover:shadow-xl">
             <CardContent className="p-6 text-center">
               <div className="bg-gradient-to-br from-accent-brand to-accent-secondary p-4 rounded-2xl inline-block mb-4">
-                <Target className="h-8 w-8 text-white" />
+                <Target className="h-8 w-8 text-background" />
               </div>
               <h3 className="font-bold text-lg mb-2">Strength Machines</h3>
               <p className="text-sm text-muted-foreground">
@@ -342,11 +283,11 @@ export default function Home() {
           <Card className="bg-card border-2 border-border hover:border-accent-brand/50 transition-all hover:shadow-xl">
             <CardContent className="p-6 text-center">
               <div className="bg-gradient-to-br from-accent-brand to-accent-secondary p-4 rounded-2xl inline-block mb-4">
-                <Users className="h-8 w-8 text-white" />
+                <Users className="h-8 w-8 text-background" />
               </div>
-              <h3 className="font-bold text-lg mb-2">Functional Training</h3>
+              <h3 className="font-bold text-lg mb-2">Open Gym Space</h3>
               <p className="text-sm text-muted-foreground">
-                Dedicated space for dynamic movements and exercises
+                Spacious areas for stretching and functional training
               </p>
             </CardContent>
           </Card>
@@ -354,63 +295,68 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="bg-gradient-to-br from-accent-brand to-accent-secondary py-16 mb-20">
+      <section className="bg-gradient-to-br from-accent-brand/5 to-accent-secondary/5 py-16 mb-20">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
-            <div>
-              <div className="text-4xl md:text-5xl font-display font-black mb-2">20+</div>
-              <div className="text-sm md:text-base opacity-90">Years Experience</div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+            <div className="text-center">
+              <div className="text-4xl md:text-5xl font-display font-black text-accent-brand mb-2">20</div>
+              <div className="text-sm text-muted-foreground">Years Strong</div>
             </div>
-            <div>
-              <div className="text-4xl md:text-5xl font-display font-black mb-2">1000+</div>
-              <div className="text-sm md:text-base opacity-90">Active Members</div>
+            <div className="text-center">
+              <div className="text-4xl md:text-5xl font-display font-black text-accent-brand mb-2">24/7</div>
+              <div className="text-sm text-muted-foreground">Always Open</div>
             </div>
-            <div>
-              <div className="text-4xl md:text-5xl font-display font-black mb-2">24/7</div>
-              <div className="text-sm md:text-base opacity-90">Access Hours</div>
+            <div className="text-center">
+              <div className="text-4xl md:text-5xl font-display font-black text-accent-brand mb-2">1000+</div>
+              <div className="text-sm text-muted-foreground">Happy Members</div>
             </div>
-            <div>
-              <div className="text-4xl md:text-5xl font-display font-black mb-2">100%</div>
-              <div className="text-sm md:text-base opacity-90">Satisfaction</div>
+            <div className="text-center">
+              <div className="text-4xl md:text-5xl font-display font-black text-accent-brand mb-2">#1</div>
+              <div className="text-sm text-muted-foreground">In Northern KY</div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Image Gallery */}
+      {/* Image Gallery Section */}
       <section className="container mx-auto px-4 mb-20">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-display font-black mb-4">
-            Tour Our <span className="text-accent-brand">Facility</span>
+            Our <span className="text-accent-brand">Facility</span>
           </h2>
           <p className="text-xl text-muted-foreground">
-            See what makes Bodyshape Fitness special
+            Take a look at our state-of-the-art gym
           </p>
         </div>
         <ImageGallery />
       </section>
 
       {/* Testimonials Section */}
-      <TestimonialsSection />
-
-      {/* Call to Action */}
       <section className="container mx-auto px-4 mb-20">
-        <div className="bg-gradient-to-br from-accent-brand to-accent-secondary rounded-3xl p-8 md:p-16 text-center text-white shadow-2xl">
+        <TestimonialsSection />
+      </section>
+
+      {/* CTA Section */}
+      <section className="container mx-auto px-4 mb-20">
+        <div className="bg-gradient-to-br from-accent-brand to-accent-secondary rounded-3xl p-12 text-center text-background shadow-2xl">
           <h2 className="text-4xl md:text-5xl font-display font-black mb-4">
             Ready to Transform Your Life?
           </h2>
-          <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-            Join Independence's #1 gym and start your fitness journey today. 24/7 access, premium equipment, and a supportive community await you.
+          <p className="text-xl mb-8 text-background/90">
+            Join Northern Kentucky's #1 gym today
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <button className="px-8 py-4 bg-white text-accent-brand font-bold text-lg rounded-xl hover:bg-white/90 transition-colors shadow-xl">
-              Join Now
-            </button>
             <a
               href="tel:363-8900"
-              className="px-8 py-4 bg-white/10 backdrop-blur text-white font-bold text-lg rounded-xl hover:bg-white/20 transition-colors border-2 border-white/30 inline-block"
+              className="px-10 py-5 bg-background text-accent-brand font-bold text-xl rounded-2xl hover:bg-background/90 transition-colors shadow-xl inline-block"
             >
-              Call 363-8900
+              Call: 363-8900
+            </a>
+            <a
+              href="mailto:bodyshapefitness@gmail.com"
+              className="px-10 py-5 bg-background/10 backdrop-blur text-background font-bold text-xl rounded-2xl hover:bg-background/20 transition-colors border-2 border-background/30 inline-block"
+            >
+              Email Us
             </a>
           </div>
         </div>
