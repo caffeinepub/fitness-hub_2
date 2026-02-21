@@ -1,14 +1,11 @@
 # Specification
 
 ## Summary
-**Goal:** Update Bodyshape Fitness website to reflect correct Independence, Kentucky location, remove inaccurate service offerings, celebrate 20th anniversary, and replace all images with actual facility photos.
+**Goal:** Fix missing gallery image, update gym address to 6424 Taylor Mill Road, and enhance blurry first photo.
 
 **Planned changes:**
-- Change location from Dallas, Texas to Independence, Kentucky with correct address, phone (363-8900), and hours
-- Remove all references to personal training services throughout the site
-- Remove all Spanish language content and references
-- Add prominent 20th anniversary celebration message to homepage
-- Replace all existing gym images with the 20 uploaded actual Bodyshape Fitness photos
-- Update equipment descriptions to highlight modern equipment visible in new photos
+- Add a valid gym facility photo to fill the empty slot in the homepage image gallery
+- Update the gym address to "6424 Taylor Mill Road" on the Locations page, footer, and all other locations where it appears
+- Enhance the first blurry gallery image to improve clarity and sharpness
 
-**User-visible outcome:** Visitors see accurate location information for Independence, Kentucky, a celebration of the gym's 20-year milestone, and authentic photos showcasing Bodyshape Fitness's actual facility and modern equipment including red Rogue gear.
+**User-visible outcome:** Users will see a complete image gallery with no empty slots, the correct gym address displayed throughout the website, and a clearer, sharper first gallery image.

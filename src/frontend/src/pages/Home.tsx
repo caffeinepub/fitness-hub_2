@@ -1,5 +1,6 @@
-import { Clock, Dumbbell, Users, Award, PartyPopper } from 'lucide-react';
+import { Clock, Dumbbell, Users, Award, PartyPopper, Trophy, Star, Target, Heart, Zap, Shield, Phone } from 'lucide-react';
 import ImageGallery from '../components/ImageGallery';
+import TestimonialsSection from '../components/TestimonialsSection';
 import { Card, CardContent } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
 
@@ -45,8 +46,69 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Operations Manager Section */}
+      <section className="container mx-auto px-4 py-20">
+        <div className="max-w-6xl mx-auto">
+          <div className="bg-gradient-to-br from-card via-card to-accent/5 rounded-3xl p-8 md:p-12 border-2 border-accent-brand/20 shadow-2xl">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl md:text-4xl font-display font-black mb-2">
+                Meet Our <span className="text-accent-brand">Operations Manager</span>
+              </h2>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div className="order-2 md:order-1">
+                <div className="space-y-4">
+                  <p className="text-lg text-foreground/90 leading-relaxed">
+                    With over two decades of dedicated service to Bodyshape Fitness, our Operations Manager has been instrumental in establishing and maintaining our reputation as Northern Kentucky's premier fitness destination. Since joining the team at our founding in 2005, they have overseen every aspect of our facility's operations, ensuring that each member receives the highest quality experience possible.
+                  </p>
+                  
+                  <p className="text-lg text-foreground/90 leading-relaxed">
+                    Their extensive experience in fitness facility management, combined with a deep commitment to member success, has shaped Bodyshape Fitness into the welcoming, results-driven environment it is today. From equipment selection and facility maintenance to member services and community engagement, their leadership has been the cornerstone of our 20-year legacy of excellence.
+                  </p>
+                  
+                  <p className="text-lg text-foreground/90 leading-relaxed">
+                    As a certified fitness professional with specialized training in facility operations and member relations, they bring both technical expertise and genuine passion for helping others achieve their fitness goals. Their hands-on approach and unwavering dedication to quality have earned the trust and respect of thousands of members throughout the years.
+                  </p>
+                  
+                  <p className="text-lg text-foreground/90 leading-relaxed">
+                    Whether you're a new member looking for guidance or a long-time fitness enthusiast seeking advanced training options, our Operations Manager is committed to ensuring your experience at Bodyshape Fitness exceeds expectations. Their vision continues to drive our mission of providing Independence, Kentucky with unmatched fitness facilities and exceptional service.
+                  </p>
+                  
+                  <div className="bg-gradient-to-r from-accent-brand to-accent-secondary rounded-2xl p-6 mt-6">
+                    <div className="flex items-center justify-center gap-3 text-white">
+                      <Phone className="h-6 w-6" />
+                      <div className="text-center">
+                        <p className="text-sm font-medium opacity-90 mb-1">Direct Contact</p>
+                        <a 
+                          href="tel:859-907-8027" 
+                          className="text-2xl font-display font-black hover:opacity-80 transition-opacity"
+                        >
+                          (859) 907-8027
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="order-1 md:order-2">
+                <div className="relative">
+                  <div className="absolute inset-0 bg-gradient-to-br from-accent-brand to-accent-secondary rounded-2xl transform rotate-3"></div>
+                  <img
+                    src="/assets/493932550_9678133642268148_1503184722967611177_n.jpg"
+                    alt="Operations Manager - Bodyshape Fitness"
+                    className="relative rounded-2xl shadow-2xl w-full h-auto object-cover border-4 border-background"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Info Cards Section */}
-      <section className="container mx-auto px-4 -mt-20 relative z-30 mb-20">
+      <section className="container mx-auto px-4 mb-20">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <Card className="bg-card/95 backdrop-blur border-2 border-border hover:border-accent-brand/50 transition-all hover:shadow-xl hover:shadow-accent-brand/10">
             <CardContent className="p-6">
@@ -98,6 +160,125 @@ export default function Home() {
         </div>
       </section>
 
+      {/* #1 Gym in Northern Kentucky Section */}
+      <section className="container mx-auto px-4 mb-20">
+        <div className="bg-gradient-to-br from-card via-card to-accent/5 rounded-3xl p-8 md:p-12 border-2 border-accent-brand/20 shadow-2xl">
+          <div className="text-center mb-10">
+            <div className="inline-flex items-center justify-center gap-2 mb-4">
+              <Trophy className="h-10 w-10 text-accent-brand" />
+            </div>
+            <h2 className="text-4xl md:text-5xl font-display font-black mb-4">
+              Northern Kentucky's <span className="text-accent-brand">#1 Gym</span>
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              For 20 years, Bodyshape Fitness has been the trusted choice for fitness enthusiasts across northern Kentucky. Here's why we're the best:
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            <Card className="bg-background/50 border-2 border-border hover:border-accent-brand/50 transition-all">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-3 mb-3">
+                  <div className="bg-accent-brand/10 p-2 rounded-lg">
+                    <Star className="h-6 w-6 text-accent-brand" />
+                  </div>
+                  <h3 className="font-bold text-lg">20 Years of Excellence</h3>
+                </div>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Two decades of proven results and community trust. We've helped thousands of members achieve their fitness goals since 2005.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-background/50 border-2 border-border hover:border-accent-brand/50 transition-all">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-3 mb-3">
+                  <div className="bg-accent-brand/10 p-2 rounded-lg">
+                    <Dumbbell className="h-6 w-6 text-accent-brand" />
+                  </div>
+                  <h3 className="font-bold text-lg">Premium Equipment</h3>
+                </div>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  State-of-the-art strength training machines, full cardio selection, free weights, and functional training areas. Everything you need under one roof.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-background/50 border-2 border-border hover:border-accent-brand/50 transition-all">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-3 mb-3">
+                  <div className="bg-accent-brand/10 p-2 rounded-lg">
+                    <Clock className="h-6 w-6 text-accent-brand" />
+                  </div>
+                  <h3 className="font-bold text-lg">True 24/7 Access</h3>
+                </div>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Work out whenever it fits your schedule. Early morning, late night, or anytime in between - we're always open for you.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-background/50 border-2 border-border hover:border-accent-brand/50 transition-all">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-3 mb-3">
+                  <div className="bg-accent-brand/10 p-2 rounded-lg">
+                    <Heart className="h-6 w-6 text-accent-brand" />
+                  </div>
+                  <h3 className="font-bold text-lg">Community Focused</h3>
+                </div>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Locally owned and operated in Independence, KY. We're invested in our community's health and wellness, not corporate profits.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-background/50 border-2 border-border hover:border-accent-brand/50 transition-all">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-3 mb-3">
+                  <div className="bg-accent-brand/10 p-2 rounded-lg">
+                    <Target className="h-6 w-6 text-accent-brand" />
+                  </div>
+                  <h3 className="font-bold text-lg">Results-Driven</h3>
+                </div>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Our members see real results. From weight loss to muscle gain to improved health markers - we help you achieve your goals.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-background/50 border-2 border-border hover:border-accent-brand/50 transition-all">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-3 mb-3">
+                  <div className="bg-accent-brand/10 p-2 rounded-lg">
+                    <Star className="h-6 w-6 text-accent-brand fill-accent-brand" />
+                  </div>
+                  <h3 className="font-bold text-lg">5-Star Rated by Members</h3>
+                </div>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Our members love us! Consistently rated 5 stars for our exceptional service, clean facility, and welcoming atmosphere.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="bg-gradient-to-r from-accent-brand to-accent-secondary rounded-2xl p-8 text-center text-white">
+            <Zap className="h-12 w-12 mx-auto mb-4" />
+            <h3 className="text-2xl md:text-3xl font-display font-black mb-3">
+              Experience the Difference
+            </h3>
+            <p className="text-lg mb-6 opacity-90 max-w-2xl mx-auto">
+              Join the gym that northern Kentucky trusts. With unmatched equipment, unbeatable hours, and a proven track record of success, Bodyshape Fitness is where your fitness journey begins.
+            </p>
+            <a
+              href="tel:363-8900"
+              className="inline-block px-8 py-4 bg-white text-accent-brand font-bold text-lg rounded-xl hover:bg-white/90 transition-colors shadow-xl"
+            >
+              Call 363-8900 Today
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* 20th Anniversary Section */}
       <section className="container mx-auto px-4 mb-20">
         <div className="bg-gradient-to-br from-accent-brand via-accent-secondary to-accent-brand rounded-3xl p-12 md:p-16 text-center shadow-2xl">
@@ -146,24 +327,15 @@ export default function Home() {
                 </div>
                 
                 <div className="bg-background/50 rounded-xl p-6 border border-border">
-                  <h3 className="font-bold text-xl mb-3 text-accent-brand">Why Choose Us</h3>
+                  <h3 className="font-bold text-xl mb-3 text-accent-brand">Member Benefits</h3>
                   <ul className="space-y-2 text-foreground/80">
-                    <li>• 20 Years Serving Independence, KY</li>
-                    <li>• 24/7 Gym Access</li>
-                    <li>• Modern, Quality Equipment</li>
-                    <li>• Lower Level Location</li>
-                    <li>• Welcoming Community</li>
+                    <li>• 24/7 Access - Work Out Anytime</li>
+                    <li>• No Contracts or Hidden Fees</li>
+                    <li>• Friendly, Supportive Environment</li>
+                    <li>• Locally Owned & Operated</li>
+                    <li>• 20 Years of Proven Results</li>
                   </ul>
                 </div>
-              </div>
-              
-              <div className="text-center mt-8">
-                <a
-                  href="tel:363-8900"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-accent-brand to-accent-secondary text-white font-bold rounded-xl hover:opacity-90 transition-opacity"
-                >
-                  Call 363-8900
-                </a>
               </div>
             </div>
           </div>
@@ -171,61 +343,50 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="bg-gradient-to-br from-accent-brand to-accent-secondary py-16 mb-20">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
+      <section className="container mx-auto px-4 mb-20">
+        <div className="bg-gradient-to-br from-card via-card to-accent/5 rounded-3xl p-12 border-2 border-border shadow-xl">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
-              <div className="text-4xl md:text-5xl font-display font-black mb-2">20</div>
-              <div className="text-sm md:text-base font-medium opacity-90">Years Strong</div>
+              <div className="text-5xl md:text-6xl font-display font-black text-accent-brand mb-2">20</div>
+              <div className="text-xl font-semibold text-foreground/80">Years of Excellence</div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-display font-black mb-2">24/7</div>
-              <div className="text-sm md:text-base font-medium opacity-90">Access</div>
+              <div className="text-5xl md:text-6xl font-display font-black text-accent-brand mb-2">24/7</div>
+              <div className="text-xl font-semibold text-foreground/80">Always Open</div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-display font-black mb-2">Modern</div>
-              <div className="text-sm md:text-base font-medium opacity-90">Equipment</div>
-            </div>
-            <div>
-              <div className="text-4xl md:text-5xl font-display font-black mb-2">100%</div>
-              <div className="text-sm md:text-base font-medium opacity-90">Dedicated</div>
+              <div className="text-5xl md:text-6xl font-display font-black text-accent-brand mb-2">1000+</div>
+              <div className="text-xl font-semibold text-foreground/80">Happy Members</div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Facility Gallery */}
-      <section className="container mx-auto px-4 mb-20">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-display font-black mb-4">
-            Our <span className="text-accent-brand">Facility</span>
-          </h2>
-          <p className="text-lg text-muted-foreground">
-            Take a look inside Bodyshape Fitness - Independence, Kentucky
-          </p>
-        </div>
-        <ImageGallery />
-      </section>
+      {/* Image Gallery */}
+      <ImageGallery />
 
-      {/* CTA Section */}
-      <section className="container mx-auto px-4 mb-20">
-        <div className="bg-gradient-to-br from-card via-card to-accent/5 rounded-3xl p-12 md:p-16 text-center border-2 border-border shadow-xl">
-          <h2 className="text-3xl md:text-5xl font-display font-black mb-6">
-            Ready to Start Your <span className="text-accent-brand">Journey?</span>
+      {/* Testimonials Section */}
+      <TestimonialsSection />
+
+      {/* Final CTA Section */}
+      <section className="container mx-auto px-4 py-20">
+        <div className="bg-gradient-to-br from-accent-brand via-accent-secondary to-accent-brand rounded-3xl p-12 md:p-16 text-center shadow-2xl">
+          <h2 className="text-4xl md:text-5xl font-display font-black text-white mb-6">
+            Ready to Start Your Fitness Journey?
           </h2>
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Join Bodyshape Fitness today and experience Independence's premier 24/7 fitness facility!
+          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+            Join Independence, Kentucky's #1 gym today. With 24/7 access, premium equipment, and 20 years of proven results, there's never been a better time to get started.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <button className="px-8 py-4 bg-gradient-to-r from-accent-brand to-accent-secondary text-white font-bold text-lg rounded-xl hover:opacity-90 transition-opacity shadow-xl shadow-accent-brand/30">
-              Join Now
-            </button>
             <a
               href="tel:363-8900"
-              className="px-8 py-4 bg-background text-foreground font-bold text-lg rounded-xl hover:bg-accent/10 transition-colors border-2 border-border inline-block"
+              className="px-8 py-4 bg-white text-accent-brand font-bold text-lg rounded-xl hover:bg-white/90 transition-colors shadow-xl inline-block"
             >
               Call 363-8900
             </a>
+            <button className="px-8 py-4 bg-white/10 backdrop-blur text-white font-bold text-lg rounded-xl hover:bg-white/20 transition-colors border-2 border-white/30">
+              Visit Us Today
+            </button>
           </div>
         </div>
       </section>

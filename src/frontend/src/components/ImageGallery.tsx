@@ -3,7 +3,7 @@ import { Dialog, DialogContent, DialogTrigger } from './ui/dialog';
 
 const images = [
   {
-    src: '/assets/348s (2).jpg',
+    src: '/assets/generated/gallery-1-enhanced.dim_800x600.png',
     alt: 'Cardio Equipment Area',
     title: 'Cardio Zone',
     description: 'Modern cardio equipment with entertainment options',
@@ -69,10 +69,10 @@ const images = [
     description: 'Close-up of our premium training equipment',
   },
   {
-    src: '/assets/639485282_1510631077735967_3883468640516476473_n.jpg',
-    alt: 'Facility Overview',
+    src: '/assets/generated/gallery-fill.dim_800x600.png',
+    alt: 'Gym Facility',
     title: 'Facility View',
-    description: 'Overview of our well-equipped facility',
+    description: 'Our well-equipped training facility',
   },
 ];
 

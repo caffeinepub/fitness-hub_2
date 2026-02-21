@@ -24,7 +24,7 @@ export default function Locations() {
         <div className="max-w-4xl mx-auto">
           <LocationCard
             name="Bodyshape Fitness - Independence"
-            address="Lower Level, Independence, KY"
+            address="6424 Taylor Mill Road, Independence, KY"
             phone="363-8900"
             hours="24/7 Gym Access"
           />
@@ -80,7 +80,7 @@ export default function Locations() {
                 <div>
                   <h3 className="font-bold mb-1">Location</h3>
                   <p className="text-muted-foreground">
-                    Lower Level<br />
+                    6424 Taylor Mill Road<br />
                     Independence, Kentucky
                   </p>
                 </div>

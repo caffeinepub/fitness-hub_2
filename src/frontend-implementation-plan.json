@@ -1,129 +1,57 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Update Bodyshape Fitness website with correct location, remove incorrect services, add 20th anniversary celebration, and replace all images with actual gym photos",
+  "title": "Fix missing image, update address, and enhance blurry photo",
   "requirements": [
     {
-      "id": "REQ-22",
-      "summary": "Update Locations page to display Independence, Kentucky location with correct address, phone (363-8900), and hours",
+      "id": "REQ-42",
+      "summary": "Add a valid gym facility photo to fill the empty/missing picture slot in the image gallery",
       "acceptanceCriteria": [
-        "Locations page shows 'Independence, Kentucky' as the gym location",
-        "No references to 'Dallas, Texas' appear anywhere on the website",
-        "Phone number 363-8900 is displayed on the Locations page",
-        "Address and hours match the Independence, Kentucky location"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/pages/Locations.tsx",
-          "operation": "modify",
-          "description": "Update location data to show Independence, Kentucky instead of Dallas, Texas. Change address to the correct Kentucky location, update phone number to 363-8900, and ensure operating hours are accurate for the Independence location. Remove all Dallas references."
-        },
-        {
-          "path": "frontend/src/components/Layout.tsx",
-          "operation": "modify",
-          "description": "Update footer contact information to show Independence, Kentucky address and phone number 363-8900 instead of any Dallas references."
-        }
-      ]
-    },
-    {
-      "id": "REQ-23",
-      "summary": "Remove all references to personal training services from the website",
-      "acceptanceCriteria": [
-        "No text mentioning 'personal training' appears on the homepage",
-        "Services section does not list personal training as an offering",
-        "Information cards do not reference personal training",
-        "All content accurately reflects services actually offered"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/pages/Home.tsx",
-          "operation": "modify",
-          "description": "Remove any references to personal training from hero content, info cards, and service descriptions. Update info cards to highlight only services that are actually offered (equipment access, facility amenities, etc.)."
-        }
-      ]
-    },
-    {
-      "id": "REQ-24",
-      "summary": "Remove all Spanish language references and offerings from the website",
-      "acceptanceCriteria": [
-        "No Spanish language content appears anywhere on the site",
-        "No references to Spanish language services or support",
-        "All content is in English only"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/pages/Home.tsx",
-          "operation": "modify",
-          "description": "Remove any Spanish language content or references to Spanish language services from the homepage content, including info cards and service descriptions."
-        },
-        {
-          "path": "frontend/src/pages/Locations.tsx",
-          "operation": "modify",
-          "description": "Remove any Spanish language content or references to Spanish language support from the locations page."
-        },
-        {
-          "path": "frontend/src/components/Layout.tsx",
-          "operation": "modify",
-          "description": "Remove any Spanish language navigation items, links, or references from the header and footer."
-        }
-      ]
-    },
-    {
-      "id": "REQ-25",
-      "summary": "Add prominent 20th anniversary celebration message to the homepage",
-      "acceptanceCriteria": [
-        "Homepage features a visible 20th anniversary celebration message",
-        "Anniversary information is prominently displayed in the hero section or near the top of the page",
-        "Content emphasizes the milestone of 20 years serving the community"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/pages/Home.tsx",
-          "operation": "modify",
-          "description": "Add a prominent 20th anniversary celebration banner or badge in the hero section. Include messaging that celebrates 20 years of serving the Independence, Kentucky community. Position this message prominently near the top of the page, potentially as a decorative element overlaying or adjacent to the hero image."
-        }
-      ]
-    },
-    {
-      "id": "REQ-26",
-      "summary": "Replace all existing gym images with the 20 newly uploaded actual Bodyshape Fitness photos",
-      "acceptanceCriteria": [
-        "All images on the homepage are replaced with the newly uploaded Bodyshape Fitness photos",
-        "Image gallery displays only the actual facility photos from the 20 uploaded images",
-        "No placeholder or stock gym images remain on the site",
-        "All images show real Bodyshape Fitness equipment, including the red Rogue equipment visible in the uploaded photos"
+        "All image slots in the gallery display valid photos with no empty placeholders",
+        "The added image shows Bodyshape Fitness equipment or facilities"
       ],
       "file_operations": [
         {
           "path": "frontend/src/components/ImageGallery.tsx",
           "operation": "modify",
-          "description": "Replace all existing placeholder/stock images with the 20 actual Bodyshape Fitness facility photos from the assets folder (348s.jpg, 348s (1).jpg through 348s (9).jpg and their -1 variants, plus 01bd025a3bc2b08a666581b45aee8af2c50810d227.jpg and 639485282_1510631077735967_3883468640516476473_n.jpg). Update the gallery to display these real facility images showing the red Rogue equipment, cardio area, weights area, and other gym spaces. Remove references to generated placeholder images."
-        },
-        {
-          "path": "frontend/src/pages/Home.tsx",
-          "operation": "modify",
-          "description": "Replace hero section background image and any other homepage images with actual Bodyshape Fitness facility photos from the uploaded assets (such as 348s.jpg, 348s (1).jpg, etc.). Ensure hero image showcases the modern equipment and facility. Remove all references to generated or stock images."
+          "description": "Update the images array in ImageGallery.tsx to replace the empty/missing image slot with the generated gym facility photo at frontend/public/assets/generated/gallery-fill.dim_800x600.png. Ensure all 12 image slots reference valid assets with proper alt text describing gym equipment or facilities."
         }
       ]
     },
     {
-      "id": "REQ-27",
-      "summary": "Update gym bio and equipment descriptions to highlight modern equipment visible in uploaded photos",
+      "id": "REQ-43",
+      "summary": "Update the gym address to '6424 Taylor Mill Road' across all frontend locations",
       "acceptanceCriteria": [
-        "Gym description mentions modern, up-to-date equipment",
-        "Content references the variety of strength training and cardio equipment shown in the photos",
-        "Equipment descriptions align with what is visible in the uploaded facility images"
+        "The address '6424 Taylor Mill Road' appears on the Locations page",
+        "The address '6424 Taylor Mill Road' appears in the footer contact information",
+        "All previous address references are replaced with the correct address"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/pages/Home.tsx",
-          "operation": "modify",
-          "description": "Update gym description and equipment highlights to emphasize the modern, high-quality equipment visible in the facility photos. Mention the red Rogue strength training equipment, variety of cardio machines, functional training areas, and other premium equipment shown in the uploaded images. Ensure descriptions accurately reflect what members will see in the actual Independence, Kentucky facility."
-        },
-        {
           "path": "frontend/src/pages/Locations.tsx",
           "operation": "modify",
-          "description": "Update location description to highlight the modern equipment and facility features visible in the uploaded photos, emphasizing the quality and variety of strength training and cardio equipment available at the Independence location."
+          "description": "Update the address prop in the LocationCard component to '6424 Taylor Mill Road' while preserving the existing phone number and hours information. Ensure the updated address displays correctly in the location details section."
+        },
+        {
+          "path": "frontend/src/components/Layout.tsx",
+          "operation": "modify",
+          "description": "Update the address displayed in the footer contact information section to '6424 Taylor Mill Road'. Maintain the existing footer layout, phone number, and all other contact details."
+        }
+      ]
+    },
+    {
+      "id": "REQ-44",
+      "summary": "Replace the first blurry gallery image with an enhanced version",
+      "acceptanceCriteria": [
+        "The first image in the gallery displays with improved clarity and sharpness",
+        "The enhanced image maintains the same subject matter (gym equipment/facilities)",
+        "The image quality is visibly improved compared to the current blurry version"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ImageGallery.tsx",
+          "operation": "modify",
+          "description": "Replace the first image in the images array with the enhanced version at frontend/public/assets/generated/gallery-1-enhanced.dim_800x600.png. Ensure the new image reference uses the correct workspace path and maintains the existing alt text and gallery functionality."
         }
       ]
     }

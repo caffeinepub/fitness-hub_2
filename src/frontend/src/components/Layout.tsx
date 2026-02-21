@@ -2,6 +2,7 @@ import { Link, Outlet, useRouterState } from '@tanstack/react-router';
 import { Dumbbell, Menu, X, Heart } from 'lucide-react';
 import { useState } from 'react';
 import { Button } from './ui/button';
+import BackgroundMusic from './BackgroundMusic';
 
 export default function Layout() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -103,6 +104,8 @@ export default function Layout() {
         <Outlet />
       </main>
 
+      <BackgroundMusic />
+
       <footer className="bg-card border-t border-border mt-20">
         <div className="container mx-auto px-4 py-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
@@ -139,7 +142,7 @@ export default function Layout() {
             <div>
               <h3 className="font-bold text-foreground mb-4">Contact</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>Lower Level</li>
+                <li>6424 Taylor Mill Road</li>
                 <li>Independence, Kentucky</li>
                 <li>
                   <a href="tel:363-8900" className="hover:text-accent-brand transition-colors">

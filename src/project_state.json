@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 13,
+  "projectStateVersion": 25,
   "summary": "Fitness facility/gym website to display information, pictures, and locations",
   "architectural_notes": [
     "User expects all content (text, images, business details) to be extracted from the Facebook page, not placeholder content",
@@ -10,7 +10,9 @@
     "Gym does NOT offer personal training services",
     "Location is Independence, Kentucky (not Dallas, Texas)",
     "Gym does not offer Spanish language services/signage",
-    "All images must be from actual Bodyshape Fitness facility, not stock photos or other gyms"
+    "All images must be from actual Bodyshape Fitness facility, not stock photos or other gyms",
+    "User prefers proper red color, not pink - current implementation appears too pink",
+    "Gym claims to be the number one gym in northern Kentucky - this should be highlighted with supporting details"
   ],
   "known_issues": [
     "Website currently has incorrect business name",
@@ -19,9 +21,13 @@
     "Website includes personal training services that are not offered",
     "Website mentions Spanish language offerings that don't exist",
     "Website contains images from other gyms instead of actual Bodyshape Fitness photos",
-    "Equipment information may be outdated"
+    "Equipment information may be outdated",
+    "Website color scheme appears pink instead of the intended red",
+    "Website lacks detailed information explaining why Bodyshape Fitness is the #1 gym in northern Kentucky",
+    "Website does not have music/audio functionality"
   ],
   "isFixRequest": true,
+  "imageRequirements": "## Required Images\n- High-quality gym facility photo showing equipment or interior space to fill the empty gallery slot (gallery-fill.dim_800x600.png)\n\n## Edit Images\n- Enhance sharpness and clarity of the blurry first gallery image (gallery-1.png > gallery-1-enhanced.dim_800x600.png)",
   "existing_features": [
     {
       "id": "feature-create-a-homepage-that-displays-the-fitness-facility-s-key-information-including-name-description-hours-of-operation-and-contact-details",
@@ -230,6 +236,126 @@
         "REQ-27"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-adjust-the-css-color-variables-in-frontend-index-css-and-frontend-tailwind-config-js-to-use-a-true-red-color-instead-of-the-current-pink-red-hue-change-the-oklch-hue-values-from-the-current-5-10-range-to-a-proper-red-hue-range-approximately-25-30-in-oklch-to-ensure-the-accent-colors-appear-as-bold-red-rather-than-pink-throughout-the-website",
+      "title": "Adjust the CSS color variables in frontend/index.css and frontend/tailwind.config.js to use a true red color instead of the current pink/red hue. Change the OKLCH hue values from the current 5-10 range to a proper red hue range (approximately 25-30 in OKLCH) to ensure the accent colors appear as bold red rather than pink throughout the website.",
+      "reqIds": [
+        "REQ-28"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-background-music-functionality-to-the-website-that-plays-automatically-with-user-controls-to-pause-stop-implement-an-audio-player-that-plays-motivational-gym-workout-music-when-users-visit-the-site-with-visible-controls-to-allow-users-to-mute-pause-or-adjust-volume",
+      "title": "Add background music functionality to the website that plays automatically (with user controls to pause/stop). Implement an audio player that plays motivational gym/workout music when users visit the site, with visible controls to allow users to mute, pause, or adjust volume.",
+      "reqIds": [
+        "REQ-29"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-expand-the-homepage-content-with-detailed-information-explaining-why-bodyshape-fitness-is-the-number-one-gym-in-northern-kentucky-add-a-prominent-section-that-highlights-unique-competitive-advantages-testimonials-awards-member-benefits-equipment-superiority-community-impact-longevity-20-years-in-business-facilities-quality-and-any-other-differentiators-that-establish-bodyshape-fitness-as-the-top-gym-in-the-northern-kentucky-region",
+      "title": "Expand the homepage content with detailed information explaining why Bodyshape Fitness is the number one gym in northern Kentucky. Add a prominent section that highlights unique competitive advantages, testimonials, awards, member benefits, equipment superiority, community impact, longevity (20 years in business), facilities quality, and any other differentiators that establish Bodyshape Fitness as the top gym in the northern Kentucky region.",
+      "reqIds": [
+        "REQ-30"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-professional-photo-of-the-operations-manager-to-the-homepage-operations-manager-bio-section",
+      "title": "Add a professional photo of the Operations Manager to the homepage Operations Manager bio section",
+      "reqIds": [
+        "REQ-31"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-write-a-detailed-professional-biography-for-the-operations-manager-in-the-homepage-bio-section-highlighting-their-experience-qualifications-leadership-role-and-connection-to-bodyshape-fitness",
+      "title": "Write a detailed professional biography for the Operations Manager in the homepage bio section, highlighting their experience, qualifications, leadership role, and connection to Bodyshape Fitness",
+      "reqIds": [
+        "REQ-32"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-display-the-operations-manager-s-phone-number-859-907-8027-in-the-operations-manager-bio-section-on-the-homepage",
+      "title": "Display the Operations Manager's phone number (859-907-8027) in the Operations Manager bio section on the homepage",
+      "reqIds": [
+        "REQ-33"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-professional-photo-of-the-operations-manager-to-the-homepage-operations-manager-bio-section-using-one-of-the-four-uploaded-images-that-best-represents-the-operations-manager-503832914-9973173229430853-7838641816744221111-n-jpg-511138171-1364898008457041-4136612213382205034-n-jpg-or-493932550-9678133642268148-1503184722967611177-n-jpg",
+      "title": "Add a professional photo of the Operations Manager to the homepage Operations Manager bio section using one of the four uploaded images that best represents the Operations Manager (503832914_9973173229430853_7838641816744221111_n.jpg, 511138171_1364898008457041_4136612213382205034_n.jpg, or 493932550_9678133642268148_1503184722967611177_n.jpg)",
+      "reqIds": [
+        "REQ-34"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-write-a-detailed-professional-biography-for-the-operations-manager-in-the-homepage-operations-manager-bio-section-highlighting-their-experience-qualifications-leadership-role-at-bodyshape-fitness-and-their-commitment-to-member-success-over-the-past-20-years",
+      "title": "Write a detailed professional biography for the Operations Manager in the homepage Operations Manager bio section, highlighting their experience, qualifications, leadership role at Bodyshape Fitness, and their commitment to member success over the past 20 years",
+      "reqIds": [
+        "REQ-35"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-display-the-operations-manager-s-phone-number-859-907-8027-in-the-operations-manager-bio-section-on-the-homepage-with-appropriate-formatting-and-a-phone-icon",
+      "title": "Display the Operations Manager's phone number 859-907-8027 in the Operations Manager bio section on the homepage with appropriate formatting and a phone icon",
+      "reqIds": [
+        "REQ-36"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-extract-all-customer-reviews-from-the-google-search-results-page-at-https-www-google-com-search-num-10-client-opera-sca-esv-a898e6a2cfab15e3-sxsrf-anbl-n7xm2f7m8tyvxohlksvvvmkimbabw-1771637044083-q-bodyshape-fitness-si-al3drzhrmvnfavqpoo2bzhf8ax9kzz6raui-dt7dg-z0kv2-xw4vfwip1o8-yh6exynfkmtatshtk-da5-qyjl0-l8b7yhbrksrbhptyp2rqaat3sfnyn54dkayrfhd3agv9vvtex0y9xirbh-sv9ls6tzqcrijwug-3d-3d-sa-x-ved-2ahukewi7zlultumsaxuxgfkfhqnuj2eqrrqlegqihbaa-biw-1364-bih-681-dpr-1-including-reviewer-names-star-ratings-review-text-and-dates",
+      "title": "Extract all customer reviews from the Google search results page at https://www.google.com/search?num=10&client=opera&sca_esv=a898e6a2cfab15e3&sxsrf=ANbL-n7xm2F7m8TyvxohLkSVvVmkIMbAbw:1771637044083&q=bodyshape+fitness&si=AL3DRZHrmvnFAVQPOO2Bzhf8AX9KZZ6raUI_dT7DG_z0kV2_xw4vFwiP1o8_yH6exynFKMtATsHTk_DA5-qYJl0_l8b7yHBRKsrBhPTYp2RqAat3sFnYN54DkayrfhD3Agv9vVteX0y9xirbh-Sv9Ls6TZQcriJwug%3D%3D&sa=X&ved=2ahUKEwi7zLultumSAxUXGFkFHQnuJ2EQrrQLegQIHBAA&biw=1364&bih=681&dpr=1 including reviewer names, star ratings, review text, and dates",
+      "reqIds": [
+        "REQ-37"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-testimonials-reviews-section-on-the-homepage-that-displays-the-extracted-customer-reviews-with-star-ratings-reviewer-names-review-text-and-dates-in-an-attractive-readable-format",
+      "title": "Create a testimonials/reviews section on the homepage that displays the extracted customer reviews with star ratings, reviewer names, review text, and dates in an attractive, readable format",
+      "reqIds": [
+        "REQ-38"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-why-choose-bodyshape-fitness-section-on-the-homepage-to-incorporate-positive-review-highlights-and-customer-satisfaction-metrics-from-the-google-reviews",
+      "title": "Update the 'Why Choose Bodyshape Fitness' section on the homepage to incorporate positive review highlights and customer satisfaction metrics from the Google reviews",
+      "reqIds": [
+        "REQ-39"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-identify-and-fix-the-empty-missing-picture-slot-in-the-image-gallery-on-the-homepage-frontend-src-components-imagegallery-tsx-by-adding-a-valid-gym-facility-photo",
+      "title": "Identify and fix the empty/missing picture slot in the image gallery on the homepage (frontend/src/components/ImageGallery.tsx) by adding a valid gym facility photo",
+      "reqIds": [
+        "REQ-42"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-gym-address-throughout-the-website-to-6424-taylor-mill-road-including-in-the-locations-page-frontend-src-pages-locations-tsx-layout-footer-frontend-src-components-layout-tsx-and-any-other-locations-where-the-address-is-displayed",
+      "title": "Update the gym address throughout the website to '6424 Taylor Mill Road' including in the Locations page (frontend/src/pages/Locations.tsx), Layout footer (frontend/src/components/Layout.tsx), and any other locations where the address is displayed",
+      "reqIds": [
+        "REQ-43"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-enhance-the-quality-and-sharpness-of-the-first-blurry-gym-facility-photo-displayed-in-the-image-gallery",
+      "title": "Enhance the quality and sharpness of the first blurry gym facility photo displayed in the image gallery",
+      "reqIds": [
+        "REQ-44"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -332,6 +458,64 @@
     {
       "id": "AR-20",
       "summary": "Update equipment information to reflect new/current equipment",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-21",
+      "summary": "Change color from pink to red (color is currently too pink, needs to be proper red)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-22",
+      "summary": "Add music functionality to play on the website",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-23",
+      "summary": "Add detailed information about why Bodyshape Fitness is the number one gym in northern Kentucky",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-24",
+      "summary": "Add operations manager photo with detailed professional biography and phone number (859-907-8027)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-25",
+      "summary": "Update the Operations Manager bio section on the homepage (frontend/src/pages/Home.tsx) to include the user's actual personal information and professional details in place of the current placeholder content",
+      "reqIds": [
+        "REQ-40"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-26",
+      "summary": "Replace the placeholder Operations Manager photo in the homepage bio section with the user's actual professional photograph uploaded in previous conversations (use one of: 503832914_9973173229430853_7838641816744221111_n.jpg, 511138171_1364898008457041_4136612213382205034_n.jpg, or 493932550_9678133642268148_1503184722967611177_n.jpg)",
+      "reqIds": [
+        "REQ-41"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-27",
+      "summary": "Fix missing/empty picture on the website",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-28",
+      "summary": "Update address to 6424 Taylor Mill Road",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-29",
+      "summary": "Enhance/improve quality of first blurry picture",
       "reqIds": [],
       "status": "pending"
     }
