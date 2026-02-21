@@ -1,57 +1,36 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Fix missing image, update address, and enhance blurry photo",
+  "title": "Remove Operations Manager bio section and replace with gym description",
   "requirements": [
     {
-      "id": "REQ-42",
-      "summary": "Add a valid gym facility photo to fill the empty/missing picture slot in the image gallery",
+      "id": "REQ-45",
+      "summary": "Remove the entire Operations Manager bio section from the homepage including profile photo, biography text, and phone number display",
       "acceptanceCriteria": [
-        "All image slots in the gallery display valid photos with no empty placeholders",
-        "The added image shows Bodyshape Fitness equipment or facilities"
+        "The Operations Manager section with profile photo, biography, and phone number is completely removed from the homepage",
+        "No visual remnants of the Operations Manager section remain"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/ImageGallery.tsx",
+          "path": "frontend/src/pages/Home.tsx",
           "operation": "modify",
-          "description": "Update the images array in ImageGallery.tsx to replace the empty/missing image slot with the generated gym facility photo at frontend/public/assets/generated/gallery-fill.dim_800x600.png. Ensure all 12 image slots reference valid assets with proper alt text describing gym equipment or facilities."
+          "description": "Remove the operations manager section that currently displays between the hero section and the ImageGallery component. This includes removing the entire div containing the manager's profile photo (01bd025a3bc2b08a666581b45aee8af2c50810d227.jpg), biography text describing work history and educational background, and the phone number display with icon."
         }
       ]
     },
     {
-      "id": "REQ-43",
-      "summary": "Update the gym address to '6424 Taylor Mill Road' across all frontend locations",
+      "id": "REQ-46",
+      "summary": "Create a small section on the homepage featuring a photo of the user and a brief description focused on the gym's facilities, equipment, and services",
       "acceptanceCriteria": [
-        "The address '6424 Taylor Mill Road' appears on the Locations page",
-        "The address '6424 Taylor Mill Road' appears in the footer contact information",
-        "All previous address references are replaced with the correct address"
+        "A compact section is added to the homepage with the user's photo",
+        "The accompanying text describes the gym's facilities, equipment, services, and what makes Bodyshape Fitness unique",
+        "The section is concise and gym-focused rather than biographical"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/pages/Locations.tsx",
+          "path": "frontend/src/pages/Home.tsx",
           "operation": "modify",
-          "description": "Update the address prop in the LocationCard component to '6424 Taylor Mill Road' while preserving the existing phone number and hours information. Ensure the updated address displays correctly in the location details section."
-        },
-        {
-          "path": "frontend/src/components/Layout.tsx",
-          "operation": "modify",
-          "description": "Update the address displayed in the footer contact information section to '6424 Taylor Mill Road'. Maintain the existing footer layout, phone number, and all other contact details."
-        }
-      ]
-    },
-    {
-      "id": "REQ-44",
-      "summary": "Replace the first blurry gallery image with an enhanced version",
-      "acceptanceCriteria": [
-        "The first image in the gallery displays with improved clarity and sharpness",
-        "The enhanced image maintains the same subject matter (gym equipment/facilities)",
-        "The image quality is visibly improved compared to the current blurry version"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/ImageGallery.tsx",
-          "operation": "modify",
-          "description": "Replace the first image in the images array with the enhanced version at frontend/public/assets/generated/gallery-1-enhanced.dim_800x600.png. Ensure the new image reference uses the correct workspace path and maintains the existing alt text and gallery functionality."
+          "description": "Add a new compact gym description section in the location where the operations manager section was removed. Display the generated owner photo at frontend/public/assets/generated/owner-photo.dim_400x400.png alongside a brief paragraph describing Bodyshape Fitness gym facilities, equipment variety, services offered, and unique attributes. Keep the section small and focused on the gym rather than personal biography. Position this section between the hero area and the ImageGallery component."
         }
       ]
     }

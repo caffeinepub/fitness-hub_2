@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 25,
+  "projectStateVersion": 27,
   "summary": "Fitness facility/gym website to display information, pictures, and locations",
   "architectural_notes": [
     "User expects all content (text, images, business details) to be extracted from the Facebook page, not placeholder content",
@@ -27,7 +27,7 @@
     "Website does not have music/audio functionality"
   ],
   "isFixRequest": true,
-  "imageRequirements": "## Required Images\n- High-quality gym facility photo showing equipment or interior space to fill the empty gallery slot (gallery-fill.dim_800x600.png)\n\n## Edit Images\n- Enhance sharpness and clarity of the blurry first gallery image (gallery-1.png > gallery-1-enhanced.dim_800x600.png)",
+  "imageRequirements": "## Required Images\n- Professional photo of the gym owner/user for homepage section (owner-photo.dim_400x400.png)",
   "existing_features": [
     {
       "id": "feature-create-a-homepage-that-displays-the-fitness-facility-s-key-information-including-name-description-hours-of-operation-and-contact-details",
@@ -356,6 +356,22 @@
         "REQ-44"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-remove-the-entire-operations-manager-bio-section-from-the-homepage-frontend-src-pages-home-tsx-including-the-profile-photo-biography-text-and-phone-number-display",
+      "title": "Remove the entire Operations Manager bio section from the homepage (frontend/src/pages/Home.tsx) including the profile photo, biography text, and phone number display",
+      "reqIds": [
+        "REQ-45"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-small-section-on-the-homepage-featuring-a-photo-of-the-user-and-a-brief-description-focused-on-the-gym-s-facilities-equipment-and-services-rather-than-personal-biography",
+      "title": "Create a small section on the homepage featuring a photo of the user and a brief description focused on the gym's facilities, equipment, and services rather than personal biography",
+      "reqIds": [
+        "REQ-46"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -374,12 +390,6 @@
     {
       "id": "AR-3",
       "summary": "Change website color scheme to red",
-      "reqIds": [],
-      "status": "pending"
-    },
-    {
-      "id": "AR-5",
-      "summary": "Add bio section for Operations Manager with uploaded photo",
       "reqIds": [],
       "status": "pending"
     },
@@ -480,28 +490,6 @@
       "status": "pending"
     },
     {
-      "id": "AR-24",
-      "summary": "Add operations manager photo with detailed professional biography and phone number (859-907-8027)",
-      "reqIds": [],
-      "status": "pending"
-    },
-    {
-      "id": "AR-25",
-      "summary": "Update the Operations Manager bio section on the homepage (frontend/src/pages/Home.tsx) to include the user's actual personal information and professional details in place of the current placeholder content",
-      "reqIds": [
-        "REQ-40"
-      ],
-      "status": "pending"
-    },
-    {
-      "id": "AR-26",
-      "summary": "Replace the placeholder Operations Manager photo in the homepage bio section with the user's actual professional photograph uploaded in previous conversations (use one of: 503832914_9973173229430853_7838641816744221111_n.jpg, 511138171_1364898008457041_4136612213382205034_n.jpg, or 493932550_9678133642268148_1503184722967611177_n.jpg)",
-      "reqIds": [
-        "REQ-41"
-      ],
-      "status": "pending"
-    },
-    {
       "id": "AR-27",
       "summary": "Fix missing/empty picture on the website",
       "reqIds": [],
@@ -516,6 +504,12 @@
     {
       "id": "AR-29",
       "summary": "Enhance/improve quality of first blurry picture",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-30",
+      "summary": "Remove the current Operations Manager bio section entirely and replace with a small section featuring the user's photo and a brief gym-focused description",
       "reqIds": [],
       "status": "pending"
     }

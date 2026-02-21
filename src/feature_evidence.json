@@ -2,10 +2,10 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-identify-and-fix-the-empty-missing-picture-slot-in-the-image-gallery-on-the-homepage-frontend-src-components-imagegallery-tsx-by-adding-a-valid-gym-facility-photo",
-      "featureTitle": "Identify and fix the empty/missing picture slot in the image gallery on the homepage (frontend/src/components/ImageGallery.tsx) by adding a valid gym facility photo",
+      "featureId": "feature-remove-the-entire-operations-manager-bio-section-from-the-homepage-frontend-src-pages-home-tsx-including-the-profile-photo-biography-text-and-phone-number-display",
+      "featureTitle": "Remove the entire Operations Manager bio section from the homepage (frontend/src/pages/Home.tsx) including the profile photo, biography text, and phone number display",
       "files": [
-        "frontend/src/components/ImageGallery.tsx"
+        "frontend/src/pages/Home.tsx"
       ],
       "components": [
         "blob-storage@4.0.0",
@@ -16,16 +16,15 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-42"
+        "REQ-45"
       ],
       "confidence": "high"
     },
     {
-      "featureId": "feature-update-the-gym-address-throughout-the-website-to-6424-taylor-mill-road-including-in-the-locations-page-frontend-src-pages-locations-tsx-layout-footer-frontend-src-components-layout-tsx-and-any-other-locations-where-the-address-is-displayed",
-      "featureTitle": "Update the gym address throughout the website to '6424 Taylor Mill Road' including in the Locations page (frontend/src/pages/Locations.tsx), Layout footer (frontend/src/components/Layout.tsx), and any other locations where the address is displayed",
+      "featureId": "feature-create-a-small-section-on-the-homepage-featuring-a-photo-of-the-user-and-a-brief-description-focused-on-the-gym-s-facilities-equipment-and-services-rather-than-personal-biography",
+      "featureTitle": "Create a small section on the homepage featuring a photo of the user and a brief description focused on the gym's facilities, equipment, and services rather than personal biography",
       "files": [
-        "frontend/src/components/Layout.tsx",
-        "frontend/src/pages/Locations.tsx"
+        "frontend/src/pages/Home.tsx"
       ],
       "components": [
         "blob-storage@4.0.0",
@@ -36,26 +35,7 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-43"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-enhance-the-quality-and-sharpness-of-the-first-blurry-gym-facility-photo-displayed-in-the-image-gallery",
-      "featureTitle": "Enhance the quality and sharpness of the first blurry gym facility photo displayed in the image gallery",
-      "files": [
-        "frontend/src/components/ImageGallery.tsx"
-      ],
-      "components": [
-        "blob-storage@4.0.0",
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-44"
+        "REQ-46"
       ],
       "confidence": "high"
     }

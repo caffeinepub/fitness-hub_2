@@ -1,79 +1,61 @@
 {
   "kind": "build_request",
-  "title": "Fix missing image, update address, and enhance blurry photo",
+  "title": "Remove Operations Manager bio section and replace with gym description",
   "projectName": "Bodyshape Fitness",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-42",
-      "text": "Identify and fix the empty/missing picture slot in the image gallery on the homepage (frontend/src/components/ImageGallery.tsx) by adding a valid gym facility photo",
+      "id": "REQ-45",
+      "text": "Remove the entire Operations Manager bio section from the homepage (frontend/src/pages/Home.tsx) including the profile photo, biography text, and phone number display",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-last"
+          "msg-user-final"
         ],
         "quotes": [
-          "looks good its missin a picture thats empty"
+          "the section about me needs removed its horrible",
+          "that entire section needs to be about the gym description"
         ]
       },
       "acceptanceCriteria": [
-        "All image slots in the gallery display valid photos with no empty placeholders",
-        "The added image shows Bodyshape Fitness equipment or facilities"
+        "The Operations Manager section with profile photo, biography, and phone number is completely removed from the homepage",
+        "No visual remnants of the Operations Manager section remain"
       ]
     },
     {
-      "id": "REQ-43",
-      "text": "Update the gym address throughout the website to '6424 Taylor Mill Road' including in the Locations page (frontend/src/pages/Locations.tsx), Layout footer (frontend/src/components/Layout.tsx), and any other locations where the address is displayed",
+      "id": "REQ-46",
+      "text": "Create a small section on the homepage featuring a photo of the user and a brief description focused on the gym's facilities, equipment, and services rather than personal biography",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-last"
+          "msg-user-final"
         ],
         "quotes": [
-          "the address is 6424 taylor mill road"
+          "i wanted a small section and a picture of me",
+          "that entire section needs to be about the gym description"
         ]
       },
       "acceptanceCriteria": [
-        "The address '6424 Taylor Mill Road' appears on the Locations page",
-        "The address '6424 Taylor Mill Road' appears in the footer contact information",
-        "All previous address references are replaced with the correct address"
-      ]
-    },
-    {
-      "id": "REQ-44",
-      "text": "Enhance the quality and sharpness of the first blurry gym facility photo displayed in the image gallery",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-last"
-        ],
-        "quotes": [
-          "the first picture is really blurry and needs enhanced"
-        ]
-      },
-      "acceptanceCriteria": [
-        "The first image in the gallery displays with improved clarity and sharpness",
-        "The enhanced image maintains the same subject matter (gym equipment/facilities)",
-        "The image quality is visibly improved compared to the current blurry version"
+        "A compact section is added to the homepage with the user's photo",
+        "The accompanying text describes the gym's facilities, equipment, services, and what makes Bodyshape Fitness unique",
+        "The section is concise and gym-focused rather than biographical"
       ]
     }
   ],
   "constraints": [
-    "Maintain the existing image gallery layout and functionality",
-    "Preserve all other location information (phone number, hours) except the street address",
-    "Keep the same visual style and color scheme when adding or enhancing images"
+    "Do not reuse the random person's photo that was previously displayed",
+    "Keep the new section small and concise",
+    "Focus content on gym description, not personal biography"
   ],
   "nonGoals": [
-    "Changing the image gallery component structure",
-    "Modifying other location details beyond the street address",
-    "Adding new images beyond fixing the missing slot and enhancing the blurry photo"
+    "Creating a lengthy biographical section",
+    "Including operations manager professional details",
+    "Displaying phone numbers in this section"
   ],
   "imageRequirements": {
     "required": [
-      "High-quality gym facility photo showing equipment or interior space to fill the empty gallery slot (gallery-fill.dim_800x600.png)"
+      "Professional photo of the gym owner/user for homepage section (owner-photo.dim_400x400.png)"
     ],
-    "edits": [
-      "Enhance sharpness and clarity of the blurry first gallery image (gallery-1.png > gallery-1-enhanced.dim_800x600.png)"
-    ]
+    "edits": []
   }
 }
