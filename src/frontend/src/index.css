@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Bebas+Neue&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.75rem;
+        
+        /* Light mode - High contrast fitness theme with RED accent */
+        --background: 1 0 0;
+        --foreground: 0.15 0 0;
+        --card: 0.99 0 0;
+        --card-foreground: 0.15 0 0;
+        --popover: 1 0 0;
+        --popover-foreground: 0.15 0 0;
+        --primary: 0.2 0 0;
+        --primary-foreground: 1 0 0;
+        --secondary: 0.96 0 0;
+        --secondary-foreground: 0.2 0 0;
+        --muted: 0.96 0 0;
+        --muted-foreground: 0.5 0 0;
+        --accent: 0.96 0 0;
+        --accent-foreground: 0.2 0 0;
+        --destructive: 0.58 0.24 27;
+        --destructive-foreground: 1 0 0;
+        --border: 0.92 0 0;
+        --input: 0.92 0 0;
+        --ring: 0.7 0 0;
+        
+        /* Fitness brand colors - Bold RED theme */
+        --accent-brand: 0.58 0.24 10;
+        --accent-secondary: 0.52 0.22 5;
+        
+        --chart-1: 0.65 0.22 41;
+        --chart-2: 0.6 0.12 185;
+        --chart-3: 0.4 0.07 227;
+        --chart-4: 0.83 0.19 84;
+        --chart-5: 0.77 0.19 70;
+    }
+
+    .dark {
+        /* Dark mode - Bold contrast with RED accent */
+        --background: 0.12 0 0;
+        --foreground: 0.98 0 0;
+        --card: 0.18 0 0;
+        --card-foreground: 0.98 0 0;
+        --popover: 0.22 0 0;
+        --popover-foreground: 0.98 0 0;
+        --primary: 0.92 0 0;
+        --primary-foreground: 0.18 0 0;
+        --secondary: 0.25 0 0;
+        --secondary-foreground: 0.98 0 0;
+        --muted: 0.25 0 0;
+        --muted-foreground: 0.65 0 0;
+        --accent: 0.3 0 0;
+        --accent-foreground: 0.98 0 0;
+        --destructive: 0.7 0.19 22;
+        --destructive-foreground: 0.18 0 0;
+        --border: 0.3 0 0;
+        --input: 0.3 0 0;
+        --ring: 0.55 0 0;
+        
+        /* Fitness brand colors - Vibrant RED in dark mode */
+        --accent-brand: 0.62 0.26 8;
+        --accent-secondary: 0.56 0.24 3;
+        
+        --chart-1: 0.49 0.24 264;
+        --chart-2: 0.7 0.17 162;
+        --chart-3: 0.77 0.19 70;
+        --chart-4: 0.63 0.27 304;
+        --chart-5: 0.65 0.25 16;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+    
+    .font-display {
+        font-family: 'Bebas Neue', 'Inter', system-ui, sans-serif;
+        letter-spacing: 0.02em;
+    }
+}
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+}

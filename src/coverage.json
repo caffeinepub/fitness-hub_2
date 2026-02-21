@@ -1,0 +1,105 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-21T00:58:21.944Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 6,
+    "implemented": 6,
+    "items": [
+      {
+        "id": "REQ-22",
+        "summary": "Update the Locations page to display the correct location as Independence, Kentucky instead of Dallas, Texas, including accurate address, phone number (363-8900), and operating hours",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/Locations.tsx",
+          "frontend/src/components/Layout.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/Locations.tsx",
+          "frontend/src/components/Layout.tsx"
+        ]
+      },
+      {
+        "id": "REQ-23",
+        "summary": "Remove all references to personal training services from the website, including any mentions in the homepage, services sections, or informational cards",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/Home.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/Home.tsx"
+        ]
+      },
+      {
+        "id": "REQ-24",
+        "summary": "Remove all Spanish language references and offerings from the website content",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/Home.tsx",
+          "frontend/src/pages/Locations.tsx",
+          "frontend/src/components/Layout.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/Home.tsx",
+          "frontend/src/pages/Locations.tsx",
+          "frontend/src/components/Layout.tsx"
+        ]
+      },
+      {
+        "id": "REQ-25",
+        "summary": "Add a prominent 20th anniversary celebration message to the homepage highlighting that Bodyshape Fitness is celebrating 20 years in business this year",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/Home.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/Home.tsx"
+        ]
+      },
+      {
+        "id": "REQ-26",
+        "summary": "Replace all existing gym images throughout the website with the 20 newly uploaded actual Bodyshape Fitness photos showing the real facility's equipment, spaces, and interior",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/ImageGallery.tsx",
+          "frontend/src/pages/Home.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/ImageGallery.tsx",
+          "frontend/src/pages/Home.tsx"
+        ]
+      },
+      {
+        "id": "REQ-27",
+        "summary": "Update the gym bio and equipment descriptions to highlight the new/current modern equipment visible in the uploaded photos, emphasizing the quality and variety of equipment available",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/Home.tsx",
+          "frontend/src/pages/Locations.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/Home.tsx",
+          "frontend/src/pages/Locations.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/src/components/ImageGallery.tsx",
+    "frontend/src/components/Layout.tsx",
+    "frontend/src/pages/Home.tsx",
+    "frontend/src/pages/Locations.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

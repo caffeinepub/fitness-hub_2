@@ -1,0 +1,20 @@
+{
+  "backend/main.mo": "Motoko backend actor that manages services (CRUD operations) and business info for Bodyshape Fitness in Dallas, TX, including blob storage mixin and hardcoded business details with 20+ years experience.",
+  "feature_evidence.json": "Feature evidence report documenting five planned changes: updating location to Independence KY, removing personal training references, removing Spanish language content, adding 20th anniversary messaging, and replacing stock images with actual facility photos.",
+  "frontend-file-summaries.txt": "JSON summary of frontend files showing completed implementation of all five features with updated Independence KY location (363-8900), removed personal training/Spanish content, added 20th anniversary celebration, and integrated actual facility photos.",
+  "frontend/index.css": "Tailwind CSS configuration with OKLCH color system using bold red accent colors (hue 5-10) for fitness brand theme, supporting both light and dark modes with Bebas Neue display font.",
+  "frontend/index.html": "HTML entry point with title and meta description for Bodyshape Fitness personal training in Dallas, TX (not yet updated to Independence KY).",
+  "frontend/src/App.tsx": "TanStack Router setup defining root route with Layout wrapper and two child routes: Home (/) and Locations (/locations).",
+  "frontend/src/components/ImageGallery.tsx": "Interactive gallery component displaying 12 actual Bodyshape Fitness facility photos in responsive grid with hover effects and modal dialog for enlarged views.",
+  "frontend/src/components/Layout.tsx": "Site layout with Bodyshape Fitness branding, responsive navigation with mobile menu, and footer showing Independence KY location (363-8900), 20-year anniversary mention, and caffeine.ai attribution.",
+  "frontend/src/components/LocationCard.tsx": "Reusable card component displaying location details (address, phone, hours) with icons in a styled card format.",
+  "frontend/src/hooks/useActor.ts": "React hook that creates and manages an authenticated or anonymous actor for backend communication using Internet Identity, invalidating dependent queries when the actor changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides Internet Identity authentication context and hooks for login/logout functionality with delegation identity management and configurable AuthClient options.",
+  "frontend/src/hooks/useQueries.ts": "Empty placeholder file for React Query hooks that would interact with the backend; currently unused for this static content site.",
+  "frontend/src/index.css": "Global CSS with Tailwind imports, custom CSS variables for light/dark theme colors using OKLCH color space, and a bold red fitness brand theme with Inter and Bebas Neue fonts.",
+  "frontend/src/main.tsx": "Application entry point that sets up React root with QueryClient and InternetIdentityProvider wrappers around the main App component.",
+  "frontend/src/pages/Home.tsx": "Homepage component featuring a hero section with 20th anniversary badge, info cards highlighting gym features (equipment, 24/7 access, community), and an image gallery section.",
+  "frontend/src/pages/Locations.tsx": "Location page displaying Bodyshape Fitness gym details in Independence, KY with embedded Google Maps, contact information cards, and hours of operation.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration with custom color system using OKLCH values, extended theme for fitness brand styling, custom fonts (Inter, Bebas Neue), and animation plugins.",
+  "project_state.json": "Project state tracking for a fitness facility website (Bodyshape Fitness in Independence, KY) celebrating its 20th anniversary. Contains architectural notes, known issues (incorrect business info, wrong location, placeholder content), and existing features for homepage, gallery, locations page, and design implementation."
+}

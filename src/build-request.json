@@ -1,0 +1,135 @@
+{
+  "kind": "build_request",
+  "title": "Update Bodyshape Fitness website with correct location, remove incorrect services, add 20th anniversary celebration, and replace all images with actual gym photos",
+  "projectName": "Bodyshape Fitness",
+  "priority": "high",
+  "requirements": [
+    {
+      "id": "REQ-22",
+      "text": "Update the Locations page to display the correct location as Independence, Kentucky instead of Dallas, Texas, including accurate address, phone number (363-8900), and operating hours",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "user-latest"
+        ],
+        "quotes": [
+          "we are locate in indpendence. kentucky not dallas texas"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Locations page shows 'Independence, Kentucky' as the gym location",
+        "No references to 'Dallas, Texas' appear anywhere on the website",
+        "Phone number 363-8900 is displayed on the Locations page",
+        "Address and hours match the Independence, Kentucky location"
+      ]
+    },
+    {
+      "id": "REQ-23",
+      "text": "Remove all references to personal training services from the website, including any mentions in the homepage, services sections, or informational cards",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "user-latest"
+        ],
+        "quotes": [
+          "WE HAVE NO PERSONAL TRAINING"
+        ]
+      },
+      "acceptanceCriteria": [
+        "No text mentioning 'personal training' appears on the homepage",
+        "Services section does not list personal training as an offering",
+        "Information cards do not reference personal training",
+        "All content accurately reflects services actually offered"
+      ]
+    },
+    {
+      "id": "REQ-24",
+      "text": "Remove all Spanish language references and offerings from the website content",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "user-latest"
+        ],
+        "quotes": [
+          "we do not offer spanish in the gym"
+        ]
+      },
+      "acceptanceCriteria": [
+        "No Spanish language content appears anywhere on the site",
+        "No references to Spanish language services or support",
+        "All content is in English only"
+      ]
+    },
+    {
+      "id": "REQ-25",
+      "text": "Add a prominent 20th anniversary celebration message to the homepage highlighting that Bodyshape Fitness is celebrating 20 years in business this year",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "user-latest"
+        ],
+        "quotes": [
+          "the gym is 20 years old this year is our anniversRY"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Homepage features a visible 20th anniversary celebration message",
+        "Anniversary information is prominently displayed in the hero section or near the top of the page",
+        "Content emphasizes the milestone of 20 years serving the community"
+      ]
+    },
+    {
+      "id": "REQ-26",
+      "text": "Replace all existing gym images throughout the website with the 20 newly uploaded actual Bodyshape Fitness photos showing the real facility's equipment, spaces, and interior",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "user-latest"
+        ],
+        "quotes": [
+          "you still have pictures of other gyms we do not want those on ther",
+          "i want tje new equipment"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All images on the homepage are replaced with the newly uploaded Bodyshape Fitness photos",
+        "Image gallery displays only the actual facility photos from the 20 uploaded images",
+        "No placeholder or stock gym images remain on the site",
+        "All images show real Bodyshape Fitness equipment, including the red Rogue equipment visible in the uploaded photos"
+      ]
+    },
+    {
+      "id": "REQ-27",
+      "text": "Update the gym bio and equipment descriptions to highlight the new/current modern equipment visible in the uploaded photos, emphasizing the quality and variety of equipment available",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "user-latest"
+        ],
+        "quotes": [
+          "i want tje new equipment"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Gym description mentions modern, up-to-date equipment",
+        "Content references the variety of strength training and cardio equipment shown in the photos",
+        "Equipment descriptions align with what is visible in the uploaded facility images"
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not change backend/main.mo unless business data needs updating",
+    "All content must reflect actual services offered at Independence, Kentucky location",
+    "Only use the 20 uploaded images as photo sources - no stock or placeholder images"
+  ],
+  "nonGoals": [
+    "Adding personal training services or references",
+    "Including Spanish language content or translations",
+    "Keeping Dallas, Texas as a location",
+    "Using images from other gyms or facilities"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

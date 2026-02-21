@@ -1,0 +1,124 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-update-the-locations-page-to-display-the-correct-location-as-independence-kentucky-instead-of-dallas-texas-including-accurate-address-phone-number-363-8900-and-operating-hours",
+      "featureTitle": "Update the Locations page to display the correct location as Independence, Kentucky instead of Dallas, Texas, including accurate address, phone number (363-8900), and operating hours",
+      "files": [
+        "frontend/src/components/Layout.tsx",
+        "frontend/src/pages/Locations.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-22"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-remove-all-references-to-personal-training-services-from-the-website-including-any-mentions-in-the-homepage-services-sections-or-informational-cards",
+      "featureTitle": "Remove all references to personal training services from the website, including any mentions in the homepage, services sections, or informational cards",
+      "files": [
+        "frontend/src/pages/Home.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-23"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-remove-all-spanish-language-references-and-offerings-from-the-website-content",
+      "featureTitle": "Remove all Spanish language references and offerings from the website content",
+      "files": [
+        "frontend/src/components/Layout.tsx",
+        "frontend/src/pages/Home.tsx",
+        "frontend/src/pages/Locations.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-24"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-prominent-20th-anniversary-celebration-message-to-the-homepage-highlighting-that-bodyshape-fitness-is-celebrating-20-years-in-business-this-year",
+      "featureTitle": "Add a prominent 20th anniversary celebration message to the homepage highlighting that Bodyshape Fitness is celebrating 20 years in business this year",
+      "files": [
+        "frontend/src/pages/Home.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-25"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-replace-all-existing-gym-images-throughout-the-website-with-the-20-newly-uploaded-actual-bodyshape-fitness-photos-showing-the-real-facility-s-equipment-spaces-and-interior",
+      "featureTitle": "Replace all existing gym images throughout the website with the 20 newly uploaded actual Bodyshape Fitness photos showing the real facility's equipment, spaces, and interior",
+      "files": [
+        "frontend/src/components/ImageGallery.tsx",
+        "frontend/src/pages/Home.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-26"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-the-gym-bio-and-equipment-descriptions-to-highlight-the-new-current-modern-equipment-visible-in-the-uploaded-photos-emphasizing-the-quality-and-variety-of-equipment-available",
+      "featureTitle": "Update the gym bio and equipment descriptions to highlight the new/current modern equipment visible in the uploaded photos, emphasizing the quality and variety of equipment available",
+      "files": [
+        "frontend/src/pages/Home.tsx",
+        "frontend/src/pages/Locations.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-27"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

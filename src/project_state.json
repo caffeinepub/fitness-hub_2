@@ -1,0 +1,343 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 13,
+  "summary": "Fitness facility/gym website to display information, pictures, and locations",
+  "architectural_notes": [
+    "User expects all content (text, images, business details) to be extracted from the Facebook page, not placeholder content",
+    "Only gym-related images should be used; personal photos like cruise ship images should not be included",
+    "Additional business information source: Yelp page at https://www.yelp.com/biz/bodyshape-fitness-independence-2",
+    "Gym is celebrating 20th anniversary this year",
+    "Gym does NOT offer personal training services",
+    "Location is Independence, Kentucky (not Dallas, Texas)",
+    "Gym does not offer Spanish language services/signage",
+    "All images must be from actual Bodyshape Fitness facility, not stock photos or other gyms"
+  ],
+  "known_issues": [
+    "Website currently has incorrect business name",
+    "Website contains generic/placeholder content instead of actual business information",
+    "Website shows incorrect location (Dallas, Texas instead of Independence, Kentucky)",
+    "Website includes personal training services that are not offered",
+    "Website mentions Spanish language offerings that don't exist",
+    "Website contains images from other gyms instead of actual Bodyshape Fitness photos",
+    "Equipment information may be outdated"
+  ],
+  "isFixRequest": true,
+  "existing_features": [
+    {
+      "id": "feature-create-a-homepage-that-displays-the-fitness-facility-s-key-information-including-name-description-hours-of-operation-and-contact-details",
+      "title": "Create a homepage that displays the fitness facility's key information including name, description, hours of operation, and contact details",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-an-image-gallery-section-to-showcase-the-fitness-facility-with-multiple-photos-of-equipment-spaces-and-facilities",
+      "title": "Create an image gallery section to showcase the fitness facility with multiple photos of equipment, spaces, and facilities",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-locations-page-that-displays-information-for-multiple-gym-locations-including-addresses-phone-numbers-and-operating-hours-for-each-location",
+      "title": "Create a locations page that displays information for multiple gym locations including addresses, phone numbers, and operating hours for each location",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-modern-energetic-visual-design-with-a-fitness-focused-aesthetic-featuring-bold-typography-high-contrast-colors-and-dynamic-layouts-that-convey-strength-and-motivation",
+      "title": "Implement a modern, energetic visual design with a fitness-focused aesthetic featuring bold typography, high-contrast colors, and dynamic layouts that convey strength and motivation",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-extract-and-add-business-information-from-the-facebook-page-at-https-www-facebook-com-bsnky-including-business-name-description-services-offered-contact-details-and-any-other-relevant-information-to-the-homepage",
+      "title": "Extract and add business information from the Facebook page at https://www.facebook.com/BSNKY/ including business name, description, services offered, contact details, and any other relevant information to the homepage",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-social-media-link-to-the-bsnky-facebook-page-https-www-facebook-com-bsnky-in-the-footer-or-header-navigation",
+      "title": "Add a social media link to the BSNKY Facebook page (https://www.facebook.com/BSNKY/) in the footer or header navigation",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-change-the-website-color-scheme-to-use-red-as-the-primary-accent-color-throughout-the-site-replacing-the-current-orange-red-accent-colors-in-the-css-variables-and-tailwind-configuration",
+      "title": "Change the website color scheme to use red as the primary accent color throughout the site, replacing the current orange/red accent colors in the CSS variables and Tailwind configuration",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-comprehensive-bio-section-for-the-gym-on-the-homepage-that-describes-the-facility-its-mission-services-equipment-and-what-makes-it-unique",
+      "title": "Create a comprehensive bio section for the gym on the homepage that describes the facility, its mission, services, equipment, and what makes it unique",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-an-operations-manager-bio-section-on-the-homepage-featuring-the-uploaded-professional-photo-and-a-professional-biography-highlighting-experience-qualifications-and-role-in-the-fitness-facility",
+      "title": "Create an Operations Manager bio section on the homepage featuring the uploaded professional photo and a professional biography highlighting experience, qualifications, and role in the fitness facility",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-background-styling-throughout-the-website-to-complement-the-new-red-color-scheme-with-modern-fitness-appropriate-background-treatments",
+      "title": "Update the background styling throughout the website to complement the new red color scheme with modern, fitness-appropriate background treatments",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-extract-all-business-information-from-the-facebook-page-at-https-www-facebook-com-bsnky-including-the-correct-business-name-description-services-offered-mission-statement-contact-details-hours-of-operation-and-any-other-relevant-information-and-replace-all-placeholder-generic-content-throughout-the-website-with-this-actual-business-information",
+      "title": "Extract all business information from the Facebook page at https://www.facebook.com/BSNKY/ including the correct business name, description, services offered, mission statement, contact details, hours of operation, and any other relevant information, and replace all placeholder/generic content throughout the website with this actual business information",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-all-existing-placeholder-images-including-the-cruise-ship-photo-and-replace-them-with-gym-specific-photos-extracted-from-the-bsnky-facebook-page-at-https-www-facebook-com-bsnky-ensuring-only-photos-showing-gym-equipment-facilities-interior-spaces-and-fitness-related-content-are-used",
+      "title": "Remove all existing placeholder images (including the cruise ship photo) and replace them with gym-specific photos extracted from the BSNKY Facebook page at https://www.facebook.com/BSNKY/, ensuring only photos showing gym equipment, facilities, interior spaces, and fitness-related content are used",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-personalize-the-gym-bio-section-on-the-homepage-with-actual-information-about-bsnky-from-the-facebook-page-including-the-facility-s-unique-characteristics-services-equipment-offerings-and-what-distinguishes-it-from-other-gyms",
+      "title": "Personalize the gym bio section on the homepage with actual information about BSNKY from the Facebook page, including the facility's unique characteristics, services, equipment offerings, and what distinguishes it from other gyms",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-operations-manager-bio-section-with-actual-information-from-the-bsnky-facebook-page-personalizing-it-with-real-details-about-the-operations-manager-s-role-experience-and-connection-to-bsnky",
+      "title": "Update the Operations Manager bio section with actual information from the BSNKY Facebook page, personalizing it with real details about the operations manager's role, experience, and connection to BSNKY",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-all-location-information-on-the-locations-page-with-actual-bsnky-gym-locations-from-the-facebook-page-including-correct-addresses-phone-numbers-and-operating-hours-for-each-location",
+      "title": "Update all location information on the Locations page with actual BSNKY gym locations from the Facebook page, including correct addresses, phone numbers, and operating hours for each location",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-extract-all-business-information-from-the-yelp-page-at-https-www-yelp-com-biz-bodyshape-fitness-independence-2-including-the-correct-business-name-bodyshape-fitness-full-address-phone-number-hours-of-operation-services-offered-amenities-and-any-other-relevant-details",
+      "title": "Extract all business information from the Yelp page at https://www.yelp.com/biz/bodyshape-fitness-independence-2 including the correct business name (Bodyshape Fitness), full address, phone number, hours of operation, services offered, amenities, and any other relevant details",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-all-references-to-bsnky-throughout-the-website-with-bodyshape-fitness-including-in-the-header-navigation-homepage-hero-section-meta-titles-and-all-other-locations-where-the-gym-name-appears",
+      "title": "Replace all references to 'BSNKY' throughout the website with 'Bodyshape Fitness' including in the header/navigation, homepage hero section, meta titles, and all other locations where the gym name appears",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-locations-page-to-display-the-specific-bodyshape-fitness-independence-location-information-from-yelp-replacing-the-generic-facebook-redirect-with-actual-address-phone-number-and-operating-hours",
+      "title": "Update the Locations page to display the specific Bodyshape Fitness Independence location information from Yelp, replacing the generic Facebook redirect with actual address, phone number, and operating hours",
+      "reqIds": [
+        "REQ-19"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-social-media-links-to-reference-the-correct-bodyshape-fitness-social-media-accounts-if-available-on-yelp-instead-of-the-bsnky-facebook-page-or-remove-social-links-if-none-are-provided-for-bodyshape-fitness",
+      "title": "Update the social media links to reference the correct Bodyshape Fitness social media accounts (if available on Yelp) instead of the BSNKY Facebook page, or remove social links if none are provided for Bodyshape Fitness",
+      "reqIds": [
+        "REQ-20"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-personalize-the-gym-bio-section-on-the-homepage-with-actual-information-about-bodyshape-fitness-from-the-yelp-page-including-the-facility-s-unique-characteristics-services-equipment-offerings-and-what-distinguishes-it",
+      "title": "Personalize the gym bio section on the homepage with actual information about Bodyshape Fitness from the Yelp page, including the facility's unique characteristics, services, equipment offerings, and what distinguishes it",
+      "reqIds": [
+        "REQ-21"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-locations-page-to-display-the-correct-location-as-independence-kentucky-instead-of-dallas-texas-including-accurate-address-phone-number-363-8900-and-operating-hours",
+      "title": "Update the Locations page to display the correct location as Independence, Kentucky instead of Dallas, Texas, including accurate address, phone number (363-8900), and operating hours",
+      "reqIds": [
+        "REQ-22"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-all-references-to-personal-training-services-from-the-website-including-any-mentions-in-the-homepage-services-sections-or-informational-cards",
+      "title": "Remove all references to personal training services from the website, including any mentions in the homepage, services sections, or informational cards",
+      "reqIds": [
+        "REQ-23"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-all-spanish-language-references-and-offerings-from-the-website-content",
+      "title": "Remove all Spanish language references and offerings from the website content",
+      "reqIds": [
+        "REQ-24"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-prominent-20th-anniversary-celebration-message-to-the-homepage-highlighting-that-bodyshape-fitness-is-celebrating-20-years-in-business-this-year",
+      "title": "Add a prominent 20th anniversary celebration message to the homepage highlighting that Bodyshape Fitness is celebrating 20 years in business this year",
+      "reqIds": [
+        "REQ-25"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-all-existing-gym-images-throughout-the-website-with-the-20-newly-uploaded-actual-bodyshape-fitness-photos-showing-the-real-facility-s-equipment-spaces-and-interior",
+      "title": "Replace all existing gym images throughout the website with the 20 newly uploaded actual Bodyshape Fitness photos showing the real facility's equipment, spaces, and interior",
+      "reqIds": [
+        "REQ-26"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-gym-bio-and-equipment-descriptions-to-highlight-the-new-current-modern-equipment-visible-in-the-uploaded-photos-emphasizing-the-quality-and-variety-of-equipment-available",
+      "title": "Update the gym bio and equipment descriptions to highlight the new/current modern equipment visible in the uploaded photos, emphasizing the quality and variety of equipment available",
+      "reqIds": [
+        "REQ-27"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Display gym information, pictures, and multiple location details",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Add information from Facebook page (BSNKY) to the website",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Change website color scheme to red",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Add bio section for Operations Manager with uploaded photo",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Add comprehensive gym bio section",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Change background design/styling",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Publish and make website live",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-11",
+      "summary": "Remove cruise ship photo and use only gym-related photos from Facebook page",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-12",
+      "summary": "Personalize all sections with actual business information from Facebook page instead of generic content",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-13",
+      "summary": "Correct the business name to match actual gym name from Facebook page",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-14",
+      "summary": "Extract and integrate business information from Yelp page (https://www.yelp.com/biz/bodyshape-fitness-independence-2)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-15",
+      "summary": "Add 20th anniversary information to gym bio/about section",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-16",
+      "summary": "Remove personal training references from website",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-17",
+      "summary": "Correct location to Independence, Kentucky (not Dallas, Texas)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-18",
+      "summary": "Remove Spanish language references/offerings from website",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-19",
+      "summary": "Remove all images from other gyms and replace with actual Bodyshape Fitness images",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-20",
+      "summary": "Update equipment information to reflect new/current equipment",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Fitness Hub",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
