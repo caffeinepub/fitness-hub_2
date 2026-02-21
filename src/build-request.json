@@ -1,60 +1,36 @@
 {
   "kind": "build_request",
-  "title": "Replace cardio dog image with equipment and add new hero background",
+  "title": "Make 20 Year Anniversary image the full background",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-58",
-      "text": "In the image gallery component (frontend/src/components/ImageGallery.tsx), remove the black French Bulldog workout image from the Cardio Zone section and replace it with a photo of actual cardio equipment from the facility",
+      "id": "REQ-60",
+      "text": "In the homepage hero section (frontend/src/pages/Home.tsx), apply the uploaded Bodyshape Fitness 20 Year Anniversary image (86b32a34-8ef3-4143-8e81-c566b3678f98.png) as the full background covering the entire hero section, modifying CSS to ensure the image fills the background area completely with appropriate sizing (cover/contain) and positioning (center)",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "user-current"
+          "msg-recent"
         ],
         "quotes": [
-          "we need to remove the black dog picture in the cardio section and replace it with cardio equipment pic"
+          "looks good now we just need to make this picture the background, whatever you need to do to the picture to make this happen"
         ]
       },
       "acceptanceCriteria": [
-        "The black French Bulldog image is removed from the Cardio Zone section in the image gallery",
-        "A real cardio equipment photo from Bodyshape Fitness facility is displayed in the Cardio Zone section",
-        "The image maintains consistent dimensions and styling with other gallery images"
-      ]
-    },
-    {
-      "id": "REQ-59",
-      "text": "Replace the homepage hero section background (frontend/src/pages/Home.tsx) with the uploaded Bodyshape Fitness 20 Year Anniversary image (86b32a34-8ef3-4143-8e81-c566b3678f98.png), applying fade/opacity effects to make it a visually striking centerpiece while maintaining readability of foreground content",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "user-current"
-        ],
-        "quotes": [
-          "need to add this picture in the background as the main picture of the website. you can fade it out or whatever needs done to make it the centerpiece"
-        ]
-      },
-      "acceptanceCriteria": [
-        "The uploaded 20 Year Anniversary image (86b32a34-8ef3-4143-8e81-c566b3678f98.png) is set as the background for the hero section",
-        "The image is positioned and sized appropriately to serve as the main visual centerpiece",
-        "Fade/opacity effects are applied to ensure text and other content remain readable over the background",
-        "The styling is responsive and looks good on mobile and desktop viewports"
+        "The 20 Year Anniversary image (86b32a34-8ef3-4143-8e81-c566b3678f98.png) displays as the full background of the hero section",
+        "The background image covers the entire hero section area",
+        "Foreground text and content remain readable over the background image",
+        "Background image is properly sized and positioned using CSS background properties"
       ]
     }
   ],
-  "constraints": [
-    "Use the uploaded image file 86b32a34-8ef3-4143-8e81-c566b3678f98.png as a static asset in frontend/public/assets/generated/",
-    "Maintain existing hero section content layout and structure while updating the background styling",
-    "Ensure the background treatment does not compromise the readability of hero text and call-to-action elements"
-  ],
+  "constraints": [],
   "nonGoals": [
-    "Modifying the content or text of the hero section",
-    "Changing the image gallery layout or structure beyond replacing the specified image",
-    "Adding new sections or features to the homepage"
+    "Changing the image itself",
+    "Modifying other sections of the homepage",
+    "Altering the image gallery"
   ],
   "imageRequirements": {
-    "required": [
-      "Photo of cardio equipment at Bodyshape Fitness facility showing treadmills, ellipticals, or exercise bikes (cardio-equipment.dim_800x600.png)"
-    ],
+    "required": [],
     "edits": []
   }
 }

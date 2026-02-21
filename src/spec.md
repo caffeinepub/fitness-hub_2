@@ -1,10 +1,11 @@
 # Specification
 
 ## Summary
-**Goal:** Update the Bodyshape Fitness website homepage hero background with the 20 Year Anniversary image and replace the cardio zone dog image with actual equipment.
+**Goal:** Make the 20 Year Anniversary image the full background of the homepage hero section.
 
 **Planned changes:**
-- Replace homepage hero section background with the uploaded 20 Year Anniversary image (86b32a34-8ef3-4143-8e81-c566b3678f98.png) and apply fade/opacity effects for readability
-- Remove the French Bulldog image from the Cardio Zone gallery section and replace it with a photo of actual cardio equipment
+- Apply the 20 Year Anniversary image (86b32a34-8ef3-4143-8e81-c566b3678f98.png) as the full background of the hero section
+- Update CSS to ensure the background image covers the entire hero area with proper sizing and positioning
+- Ensure foreground text remains readable over the background
 
-**User-visible outcome:** The homepage features a striking 20 Year Anniversary celebration image as the hero background, and the image gallery shows real cardio equipment instead of the dog photo.
+**User-visible outcome:** The homepage hero section displays the 20 Year Anniversary image as a full background, creating a visually prominent celebration of the gym's milestone.

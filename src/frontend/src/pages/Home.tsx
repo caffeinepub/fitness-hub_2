@@ -9,15 +9,15 @@ export default function Home() {
     <div>
       {/* Hero Section */}
       <section className="relative h-[600px] flex items-center justify-center overflow-hidden">
-        {/* Background Image */}
+        {/* Background Image - Full Coverage */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url(/assets/generated/86b32a34-8ef3-4143-8e81-c566b3678f98.png)',
+            backgroundImage: 'url(/assets/86b32a34-8ef3-4143-8e81-c566b3678f98.png)',
           }}
         />
-        {/* Overlay for readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/70 to-background/40 z-10" />
+        {/* Subtle overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-background/60 via-background/30 to-transparent z-10" />
         
         <div className="container mx-auto px-4 relative z-20">
           <div className="max-w-2xl">
@@ -27,12 +27,12 @@ export default function Home() {
               Celebrating 20 Years of Excellence!
             </Badge>
             
-            <h1 className="text-5xl md:text-7xl font-display font-black mb-6 leading-tight">
+            <h1 className="text-5xl md:text-7xl font-display font-black mb-6 leading-tight drop-shadow-lg">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-brand to-accent-secondary">
                 Bodyshape Fitness
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-foreground/80 mb-8 font-medium">
+            <p className="text-xl md:text-2xl text-foreground mb-8 font-medium drop-shadow-md">
               Independence, Kentucky's premier 24/7 fitness facility. Transform your body, transform your life.
             </p>
             <div className="flex flex-wrap gap-4">
@@ -41,7 +41,7 @@ export default function Home() {
               </button>
               <a
                 href="tel:363-8900"
-                className="px-8 py-4 bg-background/80 backdrop-blur text-foreground font-bold text-lg rounded-xl hover:bg-background transition-colors border-2 border-border inline-block"
+                className="px-8 py-4 bg-background/90 backdrop-blur text-foreground font-bold text-lg rounded-xl hover:bg-background transition-colors border-2 border-border inline-block"
               >
                 Call Us
               </a>
@@ -346,7 +346,7 @@ export default function Home() {
               </div>
               <h3 className="font-bold text-lg mb-2">Functional Training</h3>
               <p className="text-sm text-muted-foreground">
-                Dedicated space for functional fitness and boxing
+                Dedicated space for dynamic movements and exercises
               </p>
             </CardContent>
           </Card>
@@ -390,19 +390,17 @@ export default function Home() {
         <ImageGallery />
       </section>
 
-      {/* Testimonials */}
-      <section className="container mx-auto px-4 mb-20">
-        <TestimonialsSection />
-      </section>
+      {/* Testimonials Section */}
+      <TestimonialsSection />
 
-      {/* CTA Section */}
+      {/* Call to Action */}
       <section className="container mx-auto px-4 mb-20">
-        <div className="bg-gradient-to-br from-accent-brand to-accent-secondary rounded-3xl p-8 md:p-12 text-center text-white shadow-2xl">
+        <div className="bg-gradient-to-br from-accent-brand to-accent-secondary rounded-3xl p-8 md:p-16 text-center text-white shadow-2xl">
           <h2 className="text-4xl md:text-5xl font-display font-black mb-4">
             Ready to Transform Your Life?
           </h2>
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-            Join Independence's #1 gym and start your fitness journey today. 20 years of excellence, 24/7 access, and a community that supports your goals.
+            Join Independence's #1 gym and start your fitness journey today. 24/7 access, premium equipment, and a supportive community await you.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <button className="px-8 py-4 bg-white text-accent-brand font-bold text-lg rounded-xl hover:bg-white/90 transition-colors shadow-xl">
@@ -412,7 +410,7 @@ export default function Home() {
               href="tel:363-8900"
               className="px-8 py-4 bg-white/10 backdrop-blur text-white font-bold text-lg rounded-xl hover:bg-white/20 transition-colors border-2 border-white/30 inline-block"
             >
-              Call (363) 8900
+              Call 363-8900
             </a>
           </div>
         </div>

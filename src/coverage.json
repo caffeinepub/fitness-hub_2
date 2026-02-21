@@ -1,29 +1,18 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-21T03:25:43.005Z",
+  "generatedAt": "2026-02-21T03:35:28.655Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
   },
   "requirements": {
-    "total": 2,
-    "implemented": 2,
+    "total": 1,
+    "implemented": 1,
     "items": [
       {
-        "id": "REQ-58",
-        "summary": "In the image gallery component (frontend/src/components/ImageGallery.tsx), remove the black French Bulldog workout image from the Cardio Zone section and replace it with a photo of actual cardio equipment from the facility",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/components/ImageGallery.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/components/ImageGallery.tsx"
-        ]
-      },
-      {
-        "id": "REQ-59",
-        "summary": "Replace the homepage hero section background (frontend/src/pages/Home.tsx) with the uploaded Bodyshape Fitness 20 Year Anniversary image (86b32a34-8ef3-4143-8e81-c566b3678f98.png), applying fade/opacity effects to make it a visually striking centerpiece while maintaining readability of foreground content",
+        "id": "REQ-60",
+        "summary": "In the homepage hero section (frontend/src/pages/Home.tsx), apply the uploaded Bodyshape Fitness 20 Year Anniversary image (86b32a34-8ef3-4143-8e81-c566b3678f98.png) as the full background covering the entire hero section, modifying CSS to ensure the image fills the background area completely with appropriate sizing (cover/contain) and positioning (center)",
         "status": "implemented",
         "plannedFiles": [
           "frontend/src/pages/Home.tsx"
@@ -39,8 +28,6 @@
     "feature_evidence.json",
     "frontend-file-summaries.txt",
     "frontend-implementation-plan.json",
-    "frontend/public/assets/generated/cardio-equipment.dim_800x600.png",
-    "frontend/src/components/ImageGallery.tsx",
     "frontend/src/pages/Home.tsx",
     "project_state.json",
     "scratch/component-selection.json",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 39,
+  "projectStateVersion": 41,
   "summary": "Fitness facility/gym website to display information, pictures, and locations",
   "architectural_notes": [
     "User expects all content (text, images, business details) to be extracted from the Facebook page, not placeholder content",
@@ -23,11 +23,9 @@
     "Website contains images from other gyms instead of actual Bodyshape Fitness photos",
     "Equipment information may be outdated",
     "Website color scheme appears pink instead of the intended red",
-    "Website lacks detailed information explaining why Bodyshape Fitness is the #1 gym in northern Kentucky",
-    "Black dog picture in cardio section needs to be replaced with cardio equipment photo"
+    "Website lacks detailed information explaining why Bodyshape Fitness is the #1 gym in northern Kentucky"
   ],
   "isFixRequest": true,
-  "imageRequirements": "## Required Images\n- Photo of cardio equipment at Bodyshape Fitness facility showing treadmills, ellipticals, or exercise bikes (cardio-equipment.dim_800x600.png)",
   "existing_features": [
     {
       "id": "feature-create-a-homepage-that-displays-the-fitness-facility-s-key-information-including-name-description-hours-of-operation-and-contact-details",
@@ -468,6 +466,14 @@
         "REQ-59"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-in-the-homepage-hero-section-frontend-src-pages-home-tsx-apply-the-uploaded-bodyshape-fitness-20-year-anniversary-image-86b32a34-8ef3-4143-8e81-c566b3678f98-png-as-the-full-background-covering-the-entire-hero-section-modifying-css-to-ensure-the-image-fills-the-background-area-completely-with-appropriate-sizing-cover-contain-and-positioning-center",
+      "title": "In the homepage hero section (frontend/src/pages/Home.tsx), apply the uploaded Bodyshape Fitness 20 Year Anniversary image (86b32a34-8ef3-4143-8e81-c566b3678f98.png) as the full background covering the entire hero section, modifying CSS to ensure the image fills the background area completely with appropriate sizing (cover/contain) and positioning (center)",
+      "reqIds": [
+        "REQ-60"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -668,12 +674,6 @@
     {
       "id": "AR-43",
       "summary": "Remove the black dog picture from the cardio section and replace it with a cardio equipment photo",
-      "reqIds": [],
-      "status": "pending"
-    },
-    {
-      "id": "AR-44",
-      "summary": "Add uploaded picture as the background/main picture of the website with fade/styling to make it the centerpiece",
       "reqIds": [],
       "status": "pending"
     }
