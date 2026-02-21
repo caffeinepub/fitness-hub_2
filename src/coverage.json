@@ -1,18 +1,18 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-21T02:00:23.046Z",
+  "generatedAt": "2026-02-21T02:36:46.655Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
   },
   "requirements": {
-    "total": 2,
+    "total": 1,
     "implemented": 1,
     "items": [
       {
-        "id": "REQ-47",
-        "summary": "Create a 'Meet the Manager' section on the homepage (frontend/src/pages/Home.tsx) featuring Allen A., Manager of Bodyshape Fitness, with the uploaded photo (90s.jpg) and the provided biography text emphasizing his experience in the fitness industry, the gym's reputation as the number one gym in Independence, KY, state-of-the-art equipment, top-tier facilities, commitment to member wellness and success, and the supportive community that empowers individuals at every fitness level",
+        "id": "REQ-53",
+        "summary": "Replace the distorted manager photo in the Meet the Manager section on the homepage (frontend/src/pages/Home.tsx) with the newly uploaded image (556973191_25294936933424537_2300403285239686172_n.jpg)",
         "status": "implemented",
         "plannedFiles": [
           "frontend/src/pages/Home.tsx"
@@ -20,15 +20,6 @@
         "matchedFiles": [
           "frontend/src/pages/Home.tsx"
         ]
-      },
-      {
-        "id": "REQ-48",
-        "summary": "Add the uploaded manager photo (90s.jpg) as a static asset in frontend/public/assets/generated/ and reference it in the Meet the Manager section",
-        "status": "missing",
-        "plannedFiles": [
-          "frontend/public/assets/generated/90s.dim_400x400.jpg"
-        ],
-        "matchedFiles": []
       }
     ]
   },

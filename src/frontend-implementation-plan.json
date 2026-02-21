@@ -1,40 +1,22 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Add Manager bio section with Allen A. information",
+  "title": "Replace distorted manager photo with new uploaded image",
   "requirements": [
     {
-      "id": "REQ-47",
-      "summary": "Create a 'Meet the Manager' section on the homepage featuring Allen A. with photo and biography",
+      "id": "REQ-53",
+      "summary": "Replace the distorted manager photo in the Meet the Manager section with the newly uploaded image",
       "acceptanceCriteria": [
-        "A 'Meet the Manager' section appears on the homepage",
-        "The section displays the uploaded photo 90s.jpg of Allen A.",
-        "The section includes the title 'Manager' and name 'Allen A.'",
-        "The complete biography text provided by the user is displayed",
-        "The section is styled consistently with the rest of the homepage design",
-        "The section emphasizes the gym's reputation, equipment quality, and community focus"
+        "The Meet the Manager section displays the new uploaded photo (556973191_25294936933424537_2300403285239686172_n.jpg) instead of the current distorted 90s.jpg image",
+        "The photo is properly sized and positioned within the Meet the Manager section",
+        "The image path references the correct file in frontend/public/assets/generated/",
+        "The distorted 90s.jpg file is no longer referenced in the Meet the Manager section"
       ],
       "file_operations": [
         {
           "path": "frontend/src/pages/Home.tsx",
           "operation": "modify",
-          "description": "Add a 'Meet the Manager' section between the hero section and testimonials section featuring Allen A. as Manager of Bodyshape Fitness. Display the manager photo from frontend/public/assets/generated/90s.dim_400x400.jpg alongside the biography text emphasizing his experience in the fitness industry, the gym's reputation as the number one gym in Independence, KY, state-of-the-art equipment, top-tier facilities, commitment to member wellness and success, and the supportive community. Use consistent styling with existing homepage sections including the red accent color scheme and responsive layout."
-        }
-      ]
-    },
-    {
-      "id": "REQ-48",
-      "summary": "Add the uploaded manager photo as a static asset and reference it in the Meet the Manager section",
-      "acceptanceCriteria": [
-        "The 90s.jpg image is stored in frontend/public/assets/generated/",
-        "The Meet the Manager section correctly references and displays the image",
-        "The image is responsive and displays properly on mobile and desktop devices"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/public/assets/generated/90s.dim_400x400.jpg",
-          "operation": "create",
-          "description": "Add the uploaded manager photo 90s.jpg as a static asset with dimensions 400x400 pixels for use in the Meet the Manager section. This image will be referenced in the homepage component to display Allen A.'s professional photo."
+          "description": "Update the manager photo in the Meet the Manager section to reference the new uploaded image at frontend/public/assets/556973191_25294936933424537_2300403285239686172_n.jpg instead of the current 90s.jpg. Change the src attribute of the img element in the manager section while preserving all other styling, layout, and content including the biography text and phone number."
         }
       ]
     }

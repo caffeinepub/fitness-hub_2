@@ -1,56 +1,37 @@
 {
   "kind": "build_request",
-  "title": "Add Manager bio section with Allen A. information",
-  "projectName": "Bodyshape Fitness",
+  "title": "Replace distorted manager photo with new uploaded image",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-47",
-      "text": "Create a 'Meet the Manager' section on the homepage (frontend/src/pages/Home.tsx) featuring Allen A., Manager of Bodyshape Fitness, with the uploaded photo (90s.jpg) and the provided biography text emphasizing his experience in the fitness industry, the gym's reputation as the number one gym in Independence, KY, state-of-the-art equipment, top-tier facilities, commitment to member wellness and success, and the supportive community that empowers individuals at every fitness level",
+      "id": "REQ-53",
+      "text": "Replace the distorted manager photo in the Meet the Manager section on the homepage (frontend/src/pages/Home.tsx) with the newly uploaded image (556973191_25294936933424537_2300403285239686172_n.jpg)",
       "target": "frontend",
       "source": {
         "messageIds": [
           "msg-latest"
         ],
         "quotes": [
-          "Meet the Manager\nBusiness owner information\nAllen A.\n\nManager\n\nWith years of experience in the fitness industry, I am proud to serve as the Manager of BodyShape Fitness, where we have earned our reputation as the number one gym in Independence, KY. Our commitment to excellence is reflected in our state-of-the-art equipment and top-tier facilities, which set us apart from the competition. At BodyShape Fitness, we prioritize our members' wellness and success, providing a supportive community that empowers individuals at every fitness level. Join us today and discover why we're the go-to destination for fitness enthusiasts in the area!"
+          "that picture of me is pretty distorte can you use this picture"
         ]
       },
       "acceptanceCriteria": [
-        "A 'Meet the Manager' section appears on the homepage",
-        "The section displays the uploaded photo 90s.jpg of Allen A.",
-        "The section includes the title 'Manager' and name 'Allen A.'",
-        "The complete biography text provided by the user is displayed",
-        "The section is styled consistently with the rest of the homepage design",
-        "The section emphasizes the gym's reputation, equipment quality, and community focus"
-      ]
-    },
-    {
-      "id": "REQ-48",
-      "text": "Add the uploaded manager photo (90s.jpg) as a static asset in frontend/public/assets/generated/ and reference it in the Meet the Manager section",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-latest"
-        ]
-      },
-      "acceptanceCriteria": [
-        "The 90s.jpg image is stored in frontend/public/assets/generated/",
-        "The Meet the Manager section correctly references and displays the image",
-        "The image is responsive and displays properly on mobile and desktop devices"
+        "The Meet the Manager section displays the new uploaded photo (556973191_25294936933424537_2300403285239686172_n.jpg) instead of the current distorted 90s.jpg image",
+        "The photo is properly sized and positioned within the Meet the Manager section",
+        "The image path references the correct file in frontend/public/assets/generated/",
+        "The distorted 90s.jpg file is no longer referenced in the Meet the Manager section"
       ]
     }
   ],
   "constraints": [
-    "Do not modify backend files as this is purely a frontend content change",
-    "Do not alter immutable paths: frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, frontend/src/components/ui",
-    "Maintain consistency with existing homepage sections and styling"
+    "Do not modify the Meet the Manager biography text or phone number",
+    "Do not change the layout or styling of the Meet the Manager section beyond the photo replacement",
+    "Preserve the existing Meet the Manager section structure"
   ],
   "nonGoals": [
-    "Adding contact information or phone number for Allen A.",
-    "Creating additional manager profiles",
-    "Modifying the testimonials or other existing sections",
-    "Changing the overall page layout or color scheme"
+    "Editing any other sections of the homepage",
+    "Modifying other images in the image gallery",
+    "Changing the manager's name or contact information"
   ],
   "imageRequirements": {
     "required": [],

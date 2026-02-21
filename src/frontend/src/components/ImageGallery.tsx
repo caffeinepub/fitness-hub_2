@@ -63,10 +63,10 @@ const images = [
     description: 'Combined cardio and strength training space',
   },
   {
-    src: '/assets/01bd025a3bc2b08a666581b45aee8af2c50810d227.jpg',
-    alt: 'Equipment Detail',
+    src: '/assets/348s (2).jpg',
+    alt: 'Quality Equipment',
     title: 'Quality Equipment',
-    description: 'Close-up of our premium training equipment',
+    description: 'State-of-the-art gym equipment and machines',
   },
   {
     src: '/assets/generated/gallery-fill.dim_800x600.png',

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 29,
+  "projectStateVersion": 33,
   "summary": "Fitness facility/gym website to display information, pictures, and locations",
   "architectural_notes": [
     "User expects all content (text, images, business details) to be extracted from the Facebook page, not placeholder content",
@@ -24,7 +24,7 @@
     "Equipment information may be outdated",
     "Website color scheme appears pink instead of the intended red",
     "Website lacks detailed information explaining why Bodyshape Fitness is the #1 gym in northern Kentucky",
-    "Website does not have music/audio functionality"
+    "Manager photo (90s.jpg) appears distorted and needs replacement"
   ],
   "isFixRequest": true,
   "existing_features": [
@@ -379,6 +379,46 @@
         "REQ-47"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-replace-the-blank-quality-equipment-picture-slot-in-the-image-gallery-frontend-src-components-imagegallery-tsx-with-an-actual-gym-equipment-photo-from-the-uploaded-bodyshape-fitness-facility-images",
+      "title": "Replace the blank quality equipment picture slot in the image gallery (frontend/src/components/ImageGallery.tsx) with an actual gym equipment photo from the uploaded Bodyshape Fitness facility images",
+      "reqIds": [
+        "REQ-49"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-fix-the-blank-meet-the-manager-section-picture-in-frontend-src-pages-home-tsx-by-ensuring-allen-a-s-photo-90s-jpg-from-frontend-public-assets-generated-is-properly-displayed",
+      "title": "Fix the blank Meet the Manager section picture in frontend/src/pages/Home.tsx by ensuring Allen A.'s photo (90s.jpg) from frontend/public/assets/generated/ is properly displayed",
+      "reqIds": [
+        "REQ-50"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-picture-and-founder-information-of-another-gym-that-appears-above-the-meet-the-manager-section-in-frontend-src-pages-home-tsx-to-prevent-legal-issues",
+      "title": "Remove the picture and founder information of another gym that appears above the Meet the Manager section in frontend/src/pages/Home.tsx to prevent legal issues",
+      "reqIds": [
+        "REQ-51"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-dog-picture-from-the-image-gallery-in-frontend-src-components-imagegallery-tsx-as-it-is-not-gym-related",
+      "title": "Remove the dog picture from the image gallery in frontend/src/components/ImageGallery.tsx as it is not gym-related",
+      "reqIds": [
+        "REQ-52"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-distorted-manager-photo-in-the-meet-the-manager-section-on-the-homepage-frontend-src-pages-home-tsx-with-the-newly-uploaded-image-556973191-25294936933424537-2300403285239686172-n-jpg",
+      "title": "Replace the distorted manager photo in the Meet the Manager section on the homepage (frontend/src/pages/Home.tsx) with the newly uploaded image (556973191_25294936933424537_2300403285239686172_n.jpg)",
+      "reqIds": [
+        "REQ-53"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -526,6 +566,30 @@
       "reqIds": [
         "REQ-48"
       ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-34",
+      "summary": "Replace blank quality equipment picture slot with actual gym equipment photo",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-36",
+      "summary": "Remove picture and founder of another gym above the manager section (legal risk)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-37",
+      "summary": "Remove dog picture (not gym related)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-38",
+      "summary": "Replace distorted manager photo with new uploaded picture",
+      "reqIds": [],
       "status": "pending"
     }
   ],
