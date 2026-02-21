@@ -3,76 +3,40 @@ import { Dialog, DialogContent, DialogTrigger } from './ui/dialog';
 
 const images = [
   {
-    src: '/assets/517620380_1306336444832099_8194069313658765999_n.jpg',
-    alt: 'Cardio Equipment Area',
+    src: '/assets/enhanced_348s (7).jpg',
+    alt: 'Premium Plate-Loaded Equipment',
+    title: 'Plate-Loaded Machines',
+    description: 'Professional-grade red Rogue plate-loaded equipment',
+  },
+  {
+    src: '/assets/enhanced_348s.jpg',
+    alt: 'Cardio and Training Area',
     title: 'Cardio Zone',
-    description: 'Modern cardio equipment with entertainment systems',
+    description: 'Modern cardio equipment with vibrant orange accent walls',
   },
   {
-    src: '/assets/516865380_1306336354832108_3912420931968401456_n.jpg',
-    alt: 'Weight Training Floor',
-    title: 'Weight Training',
-    description: 'Comprehensive free weight and machine area',
-  },
-  {
-    src: '/assets/516502719_1306343131498097_2361034153104414808_n.jpg',
-    alt: 'Facility Exterior',
-    title: 'Our Location',
-    description: 'Bodyshape Fitness Center entrance and parking',
-  },
-  {
-    src: '/assets/516245078_1306336264832117_2368290094586174251_n.jpg',
-    alt: 'Free Weights Section',
-    title: 'Free Weights',
-    description: 'Complete free weight training area',
-  },
-  {
-    src: '/assets/518270242_1306336364832107_8264580889139094172_n.jpg',
-    alt: 'Strength Training Equipment',
-    title: 'Strength Training',
-    description: 'Professional-grade strength equipment',
-  },
-  {
-    src: '/assets/517940772_1306336431498767_8407149108597182872_n.jpg',
+    src: '/assets/enhanced_348s (8).jpg',
     alt: 'Main Training Floor',
     title: 'Training Floor',
-    description: 'Spacious main floor with diverse equipment',
+    description: 'Spacious main floor with diverse strength equipment',
   },
   {
-    src: '/assets/348s (1).jpg',
-    alt: 'Free Weight Area',
+    src: '/assets/enhanced_517620380_1306336444832099_8194069313658765999_n.jpg',
+    alt: 'Cardio Equipment Area',
+    title: 'Cardio Equipment',
+    description: 'State-of-the-art cardio machines and training area',
+  },
+  {
+    src: '/assets/enhanced_517940772_1306336431498767_8407149108597182872_n.jpg',
+    alt: 'Free Weight Training Area',
     title: 'Free Weights',
     description: 'Complete free weight and functional training area',
   },
   {
-    src: '/assets/348s (5).jpg',
-    alt: 'Strength Training Area',
+    src: '/assets/enhanced_518270242_1306336364832107_8264580889139094172_n.jpg',
+    alt: 'Strength Training Floor',
     title: 'Strength Training',
-    description: 'Premium strength training equipment and free weights',
-  },
-  {
-    src: '/assets/348s (6).jpg',
-    alt: 'Red Rogue Equipment',
-    title: 'Premium Equipment',
-    description: 'High-quality Rogue strength training machines',
-  },
-  {
-    src: '/assets/348s (7).jpg',
-    alt: 'Plate-Loaded Machines',
-    title: 'Plate-Loaded Area',
-    description: 'Professional-grade plate-loaded equipment',
-  },
-  {
-    src: '/assets/348s (8).jpg',
-    alt: 'Training Floor',
-    title: 'Training Floor',
-    description: 'Spacious training floor with variety of equipment',
-  },
-  {
-    src: '/assets/348s (9).jpg',
-    alt: 'Functional Training',
-    title: 'Functional Training',
-    description: 'Dedicated functional training and boxing area',
+    description: 'Professional strength training equipment and benches',
   },
 ];
 

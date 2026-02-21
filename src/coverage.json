@@ -1,7 +1,7 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-21T18:23:35.899Z",
+  "generatedAt": "2026-02-21T23:12:58.291Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
@@ -12,13 +12,13 @@
     "items": [
       {
         "id": "REQ-1",
-        "summary": "Change the --text-muted CSS custom property from red back to silver in both light and dark theme modes in frontend/src/index.css",
+        "summary": "Replace the existing 12 facility photos in the ImageGallery component with the 6 uploaded images (enhanced_348s (7).jpg, enhanced_348s.jpg, enhanced_348s (8).jpg, enhanced_517620380_1306336444832099_8194069313658765999_n.jpg, enhanced_517940772_1306336431498767_8407149108597182872_n.jpg, enhanced_518270242_1306336364832107_8264580889139094172_n.jpg)",
         "status": "implemented",
         "plannedFiles": [
-          "frontend/src/index.css"
+          "frontend/src/components/ImageGallery.tsx"
         ],
         "matchedFiles": [
-          "frontend/src/index.css"
+          "frontend/src/components/ImageGallery.tsx"
         ]
       }
     ]
@@ -28,7 +28,7 @@
     "feature_evidence.json",
     "frontend-file-summaries.txt",
     "frontend-implementation-plan.json",
-    "frontend/src/index.css",
+    "frontend/src/components/ImageGallery.tsx",
     "project_state.json",
     "scratch/component-selection.json",
     "spec.md",

@@ -44,7 +44,7 @@ export default function Home() {
                 <div className="relative w-72 h-72">
                   <div className="absolute inset-0 bg-gradient-to-br from-accent-brand to-accent-secondary rounded-2xl transform -rotate-3"></div>
                   <img
-                    src="/assets/556973191_25294936933424537_2300403285239686172_n.jpg"
+                    src="/assets/profile_enhanced_v2.png"
                     alt="Allen D. - Manager"
                     className="relative rounded-2xl shadow-2xl w-full h-full object-cover border-4 border-background"
                   />

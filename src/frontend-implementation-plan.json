@@ -1,21 +1,23 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Change red muted text to silver",
+  "title": "Replace image gallery photos with new facility images",
   "requirements": [
     {
       "id": "REQ-1",
-      "summary": "Update the --text-muted CSS custom property from red to silver in both light and dark theme modes",
+      "summary": "Replace the existing 12 facility photos in the ImageGallery component with the 6 uploaded images",
       "acceptanceCriteria": [
-        "The --text-muted variable in light mode uses a silver/gray color value",
-        "The --text-muted variable in dark mode uses a silver/gray color value",
-        "Smaller text elements that use the muted text color appear in silver instead of red"
+        "The ImageGallery component displays the 6 new uploaded facility images",
+        "Old gallery images are removed from the component",
+        "The grid layout adjusts appropriately for 6 images instead of 12",
+        "Images maintain responsive behavior and hover effects",
+        "Modal dialog still functions for enlarged image views"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/index.css",
+          "path": "frontend/src/components/ImageGallery.tsx",
           "operation": "modify",
-          "description": "Change the --text-muted CSS custom property from its current red color value to a silver/gray color value in both the light theme (root selector) and dark theme (.dark selector). Use OKLCH color values consistent with the existing color system, selecting an appropriate lightness and chroma to create a neutral silver/gray tone that maintains readability for muted text elements."
+          "description": "Update the image array to reference the 6 new facility images: enhanced_348s (7).jpg, enhanced_348s.jpg, enhanced_348s (8).jpg, enhanced_517620380_1306336444832099_8194069313658765999_n.jpg, enhanced_517940772_1306336431498767_8407149108597182872_n.jpg, and enhanced_518270242_1306336364832107_8264580889139094172_n.jpg. Remove all 12 old image references. Ensure the grid layout, hover effects, and modal dialog continue to function correctly with the reduced image count."
         }
       ]
     }
