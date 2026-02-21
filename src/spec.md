@@ -1,10 +1,13 @@
 # Specification
 
 ## Summary
-**Goal:** Replace the Operations Manager bio section with a gym-focused description section featuring the owner's photo.
+**Goal:** Add a "Meet the Manager" section to the homepage featuring Allen A., Manager of Bodyshape Fitness, with his photo and biography.
 
 **Planned changes:**
-- Remove the entire Operations Manager bio section from the homepage, including profile photo, biography text, and phone number
-- Add a compact section with the owner's photo and a description of Bodyshape Fitness gym's facilities, equipment, and services
+- Add a new "Meet the Manager" section to the homepage (frontend/src/pages/Home.tsx)
+- Display Allen A.'s photo (90s.jpg) and his complete biography text
+- Include his title "Manager" and name "Allen A."
+- Style the section consistently with the existing homepage design
+- Ensure the section is responsive for mobile and desktop devices
 
-**User-visible outcome:** The homepage displays a concise gym description section with the owner's photo instead of the previous biographical Operations Manager section.
+**User-visible outcome:** Visitors to the homepage will see a dedicated "Meet the Manager" section featuring Allen A. with his photo and biography, highlighting the gym's reputation as the number one gym in Independence, KY, and its commitment to member wellness.

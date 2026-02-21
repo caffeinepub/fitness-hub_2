@@ -2,8 +2,8 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-remove-the-entire-operations-manager-bio-section-from-the-homepage-frontend-src-pages-home-tsx-including-the-profile-photo-biography-text-and-phone-number-display",
-      "featureTitle": "Remove the entire Operations Manager bio section from the homepage (frontend/src/pages/Home.tsx) including the profile photo, biography text, and phone number display",
+      "featureId": "feature-create-a-meet-the-manager-section-on-the-homepage-frontend-src-pages-home-tsx-featuring-allen-a-manager-of-bodyshape-fitness-with-the-uploaded-photo-90s-jpg-and-the-provided-biography-text-emphasizing-his-experience-in-the-fitness-industry-the-gym-s-reputation-as-the-number-one-gym-in-independence-ky-state-of-the-art-equipment-top-tier-facilities-commitment-to-member-wellness-and-success-and-the-supportive-community-that-empowers-individuals-at-every-fitness-level",
+      "featureTitle": "Create a 'Meet the Manager' section on the homepage (frontend/src/pages/Home.tsx) featuring Allen A., Manager of Bodyshape Fitness, with the uploaded photo (90s.jpg) and the provided biography text emphasizing his experience in the fitness industry, the gym's reputation as the number one gym in Independence, KY, state-of-the-art equipment, top-tier facilities, commitment to member wellness and success, and the supportive community that empowers individuals at every fitness level",
       "files": [
         "frontend/src/pages/Home.tsx"
       ],
@@ -16,26 +16,7 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-45"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-create-a-small-section-on-the-homepage-featuring-a-photo-of-the-user-and-a-brief-description-focused-on-the-gym-s-facilities-equipment-and-services-rather-than-personal-biography",
-      "featureTitle": "Create a small section on the homepage featuring a photo of the user and a brief description focused on the gym's facilities, equipment, and services rather than personal biography",
-      "files": [
-        "frontend/src/pages/Home.tsx"
-      ],
-      "components": [
-        "blob-storage@4.0.0",
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-46"
+        "REQ-47"
       ],
       "confidence": "high"
     }

@@ -1,4 +1,4 @@
-import { Clock, Dumbbell, Users, Award, PartyPopper, Trophy, Star, Target, Heart, Zap, Shield } from 'lucide-react';
+import { Clock, Dumbbell, Users, Award, PartyPopper, Trophy, Star, Target, Heart, Zap, Shield, User } from 'lucide-react';
 import ImageGallery from '../components/ImageGallery';
 import TestimonialsSection from '../components/TestimonialsSection';
 import { Card, CardContent } from '../components/ui/card';
@@ -72,6 +72,56 @@ export default function Home() {
                 <p className="text-lg text-foreground/90 leading-relaxed">
                   With true 24/7 access, you can work out on your schedule. Whether you're an early morning warrior or a late-night lifter, our clean, well-maintained facility is always ready for you. Experience the difference that 20 years of dedication to our community makes.
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Meet the Manager Section */}
+      <section className="container mx-auto px-4 mb-20">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-4xl md:text-5xl font-display font-black mb-4">
+              Meet the <span className="text-accent-brand">Manager</span>
+            </h2>
+            <p className="text-xl text-muted-foreground">
+              Leadership dedicated to your fitness success
+            </p>
+          </div>
+
+          <div className="bg-gradient-to-br from-card via-card to-accent/5 rounded-3xl p-8 md:p-12 border-2 border-accent-brand/20 shadow-2xl">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+              <div className="md:col-span-1 flex justify-center">
+                <div className="relative w-72 h-72">
+                  <div className="absolute inset-0 bg-gradient-to-br from-accent-brand to-accent-secondary rounded-2xl transform -rotate-3"></div>
+                  <img
+                    src="/assets/generated/90s.dim_400x400.jpg"
+                    alt="Allen A. - Manager"
+                    className="relative rounded-2xl shadow-2xl w-full h-full object-cover border-4 border-background"
+                  />
+                </div>
+              </div>
+              
+              <div className="md:col-span-2">
+                <div className="mb-4">
+                  <Badge className="mb-2 px-3 py-1 bg-gradient-to-r from-accent-brand to-accent-secondary text-white border-0">
+                    <User className="h-4 w-4 mr-1" />
+                    Manager
+                  </Badge>
+                  <h3 className="text-3xl md:text-4xl font-display font-black text-foreground">
+                    Allen A.
+                  </h3>
+                </div>
+                
+                <div className="space-y-4 text-lg text-foreground/90 leading-relaxed">
+                  <p>
+                    With years of experience in the fitness industry, I am proud to serve as the Manager of BodyShape Fitness, where we have earned our reputation as the number one gym in Independence, KY. Our commitment to excellence is reflected in our state-of-the-art equipment and top-tier facilities, which set us apart from the competition.
+                  </p>
+                  <p>
+                    At BodyShape Fitness, we prioritize our members' wellness and success, providing a supportive community that empowers individuals at every fitness level. Join us today and discover why we're the go-to destination for fitness enthusiasts in the area!
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -346,10 +396,10 @@ export default function Home() {
       <section className="container mx-auto px-4 mb-20">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-display font-black mb-4">
-            Tour Our <span className="text-accent-brand">Facility</span>
+            Our <span className="text-accent-brand">Facility</span>
           </h2>
           <p className="text-xl text-muted-foreground">
-            See what makes Bodyshape Fitness special
+            Take a look at our state-of-the-art equipment and facilities
           </p>
         </div>
         <ImageGallery />
@@ -361,12 +411,11 @@ export default function Home() {
       {/* Call to Action */}
       <section className="container mx-auto px-4 mb-20">
         <div className="bg-gradient-to-br from-card via-card to-accent/5 rounded-3xl p-12 md:p-16 text-center border-2 border-accent-brand/20 shadow-2xl">
-          <Shield className="h-16 w-16 mx-auto mb-6 text-accent-brand" />
           <h2 className="text-4xl md:text-5xl font-display font-black mb-6">
             Ready to Start Your <span className="text-accent-brand">Fitness Journey?</span>
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Join Independence, Kentucky's premier fitness facility today. No long-term contracts, just results.
+            Join Independence, Kentucky's premier 24/7 fitness facility today. No long-term contracts, just results.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a
@@ -375,9 +424,12 @@ export default function Home() {
             >
               Call 363-8900
             </a>
-            <button className="px-8 py-4 bg-background border-2 border-border text-foreground font-bold text-lg rounded-xl hover:bg-accent-brand/5 transition-colors">
-              Visit Us Today
-            </button>
+            <a
+              href="mailto:bodyshapefitness@gmail.com"
+              className="px-8 py-4 bg-background border-2 border-border text-foreground font-bold text-lg rounded-xl hover:border-accent-brand/50 transition-colors inline-block"
+            >
+              Email Us
+            </a>
           </div>
         </div>
       </section>

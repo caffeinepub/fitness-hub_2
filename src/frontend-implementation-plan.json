@@ -1,36 +1,40 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Remove Operations Manager bio section and replace with gym description",
+  "title": "Add Manager bio section with Allen A. information",
   "requirements": [
     {
-      "id": "REQ-45",
-      "summary": "Remove the entire Operations Manager bio section from the homepage including profile photo, biography text, and phone number display",
+      "id": "REQ-47",
+      "summary": "Create a 'Meet the Manager' section on the homepage featuring Allen A. with photo and biography",
       "acceptanceCriteria": [
-        "The Operations Manager section with profile photo, biography, and phone number is completely removed from the homepage",
-        "No visual remnants of the Operations Manager section remain"
+        "A 'Meet the Manager' section appears on the homepage",
+        "The section displays the uploaded photo 90s.jpg of Allen A.",
+        "The section includes the title 'Manager' and name 'Allen A.'",
+        "The complete biography text provided by the user is displayed",
+        "The section is styled consistently with the rest of the homepage design",
+        "The section emphasizes the gym's reputation, equipment quality, and community focus"
       ],
       "file_operations": [
         {
           "path": "frontend/src/pages/Home.tsx",
           "operation": "modify",
-          "description": "Remove the operations manager section that currently displays between the hero section and the ImageGallery component. This includes removing the entire div containing the manager's profile photo (01bd025a3bc2b08a666581b45aee8af2c50810d227.jpg), biography text describing work history and educational background, and the phone number display with icon."
+          "description": "Add a 'Meet the Manager' section between the hero section and testimonials section featuring Allen A. as Manager of Bodyshape Fitness. Display the manager photo from frontend/public/assets/generated/90s.dim_400x400.jpg alongside the biography text emphasizing his experience in the fitness industry, the gym's reputation as the number one gym in Independence, KY, state-of-the-art equipment, top-tier facilities, commitment to member wellness and success, and the supportive community. Use consistent styling with existing homepage sections including the red accent color scheme and responsive layout."
         }
       ]
     },
     {
-      "id": "REQ-46",
-      "summary": "Create a small section on the homepage featuring a photo of the user and a brief description focused on the gym's facilities, equipment, and services",
+      "id": "REQ-48",
+      "summary": "Add the uploaded manager photo as a static asset and reference it in the Meet the Manager section",
       "acceptanceCriteria": [
-        "A compact section is added to the homepage with the user's photo",
-        "The accompanying text describes the gym's facilities, equipment, services, and what makes Bodyshape Fitness unique",
-        "The section is concise and gym-focused rather than biographical"
+        "The 90s.jpg image is stored in frontend/public/assets/generated/",
+        "The Meet the Manager section correctly references and displays the image",
+        "The image is responsive and displays properly on mobile and desktop devices"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/pages/Home.tsx",
-          "operation": "modify",
-          "description": "Add a new compact gym description section in the location where the operations manager section was removed. Display the generated owner photo at frontend/public/assets/generated/owner-photo.dim_400x400.png alongside a brief paragraph describing Bodyshape Fitness gym facilities, equipment variety, services offered, and unique attributes. Keep the section small and focused on the gym rather than personal biography. Position this section between the hero area and the ImageGallery component."
+          "path": "frontend/public/assets/generated/90s.dim_400x400.jpg",
+          "operation": "create",
+          "description": "Add the uploaded manager photo 90s.jpg as a static asset with dimensions 400x400 pixels for use in the Meet the Manager section. This image will be referenced in the homepage component to display Allen A.'s professional photo."
         }
       ]
     }
