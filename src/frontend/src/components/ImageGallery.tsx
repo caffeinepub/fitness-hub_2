@@ -3,10 +3,10 @@ import { Dialog, DialogContent, DialogTrigger } from './ui/dialog';
 
 const images = [
   {
-    src: '/assets/generated/gallery-1-enhanced.dim_800x600.png',
-    alt: 'Cardio Equipment Area',
-    title: 'Cardio Zone',
-    description: 'Modern cardio equipment with entertainment options',
+    src: '/assets/348s (1).jpg',
+    alt: 'Free Weight Area',
+    title: 'Free Weights',
+    description: 'Complete free weight and functional training area',
   },
   {
     src: '/assets/348s (5).jpg',
@@ -27,10 +27,10 @@ const images = [
     description: 'Professional-grade plate-loaded equipment',
   },
   {
-    src: '/assets/348s (1).jpg',
-    alt: 'Free Weight Area',
-    title: 'Free Weights',
-    description: 'Complete free weight and functional training area',
+    src: '/assets/generated/cardio-equipment.dim_800x600.png',
+    alt: 'Cardio Zone',
+    title: 'Cardio Zone',
+    description: 'State-of-the-art cardio equipment for all fitness levels',
   },
   {
     src: '/assets/348s (8).jpg',

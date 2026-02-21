@@ -1,22 +1,38 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Replace distorted manager photo with new uploaded image",
+  "title": "Replace cardio dog image with equipment and add new hero background",
   "requirements": [
     {
-      "id": "REQ-53",
-      "summary": "Replace the distorted manager photo in the Meet the Manager section with the newly uploaded image",
+      "id": "REQ-58",
+      "summary": "Replace the black French Bulldog workout image in the Cardio Zone section of the image gallery with a photo of actual cardio equipment from the facility",
       "acceptanceCriteria": [
-        "The Meet the Manager section displays the new uploaded photo (556973191_25294936933424537_2300403285239686172_n.jpg) instead of the current distorted 90s.jpg image",
-        "The photo is properly sized and positioned within the Meet the Manager section",
-        "The image path references the correct file in frontend/public/assets/generated/",
-        "The distorted 90s.jpg file is no longer referenced in the Meet the Manager section"
+        "The black French Bulldog image is removed from the Cardio Zone section in the image gallery",
+        "A real cardio equipment photo from Bodyshape Fitness facility is displayed in the Cardio Zone section",
+        "The image maintains consistent dimensions and styling with other gallery images"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ImageGallery.tsx",
+          "operation": "modify",
+          "description": "Replace the 'french-bulldog-cardio.dim_800x600.png' image reference in the Cardio Zone section with the generated cardio equipment image 'frontend/public/assets/generated/cardio-equipment.dim_800x600.png'. Update the image src path and maintain the existing alt text and styling to ensure consistent presentation with other gallery images."
+        }
+      ]
+    },
+    {
+      "id": "REQ-59",
+      "summary": "Replace the homepage hero section background with the uploaded Bodyshape Fitness 20 Year Anniversary image, applying fade/opacity effects for visual impact while maintaining content readability",
+      "acceptanceCriteria": [
+        "The uploaded 20 Year Anniversary image (86b32a34-8ef3-4143-8e81-c566b3678f98.png) is set as the background for the hero section",
+        "The image is positioned and sized appropriately to serve as the main visual centerpiece",
+        "Fade/opacity effects are applied to ensure text and other content remain readable over the background",
+        "The styling is responsive and looks good on mobile and desktop viewports"
       ],
       "file_operations": [
         {
           "path": "frontend/src/pages/Home.tsx",
           "operation": "modify",
-          "description": "Update the manager photo in the Meet the Manager section to reference the new uploaded image at frontend/public/assets/556973191_25294936933424537_2300403285239686172_n.jpg instead of the current 90s.jpg. Change the src attribute of the img element in the manager section while preserving all other styling, layout, and content including the biography text and phone number."
+          "description": "Update the hero section to use the uploaded 20 Year Anniversary image 'frontend/public/assets/generated/86b32a34-8ef3-4143-8e81-c566b3678f98.png' as a background image. Apply CSS background properties (background-image, background-size: cover, background-position: center) to the hero container. Add an overlay layer with reduced opacity (e.g., bg-black/50 or bg-gradient-to-b) to create the fade effect and ensure the existing hero text, 20th anniversary badge, and call-to-action buttons remain readable. Ensure responsive behavior using Tailwind responsive classes."
         }
       ]
     }

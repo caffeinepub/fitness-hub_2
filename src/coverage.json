@@ -1,18 +1,29 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-21T02:36:46.655Z",
+  "generatedAt": "2026-02-21T03:25:43.005Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
   },
   "requirements": {
-    "total": 1,
-    "implemented": 1,
+    "total": 2,
+    "implemented": 2,
     "items": [
       {
-        "id": "REQ-53",
-        "summary": "Replace the distorted manager photo in the Meet the Manager section on the homepage (frontend/src/pages/Home.tsx) with the newly uploaded image (556973191_25294936933424537_2300403285239686172_n.jpg)",
+        "id": "REQ-58",
+        "summary": "In the image gallery component (frontend/src/components/ImageGallery.tsx), remove the black French Bulldog workout image from the Cardio Zone section and replace it with a photo of actual cardio equipment from the facility",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/ImageGallery.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/ImageGallery.tsx"
+        ]
+      },
+      {
+        "id": "REQ-59",
+        "summary": "Replace the homepage hero section background (frontend/src/pages/Home.tsx) with the uploaded Bodyshape Fitness 20 Year Anniversary image (86b32a34-8ef3-4143-8e81-c566b3678f98.png), applying fade/opacity effects to make it a visually striking centerpiece while maintaining readability of foreground content",
         "status": "implemented",
         "plannedFiles": [
           "frontend/src/pages/Home.tsx"
@@ -28,6 +39,8 @@
     "feature_evidence.json",
     "frontend-file-summaries.txt",
     "frontend-implementation-plan.json",
+    "frontend/public/assets/generated/cardio-equipment.dim_800x600.png",
+    "frontend/src/components/ImageGallery.tsx",
     "frontend/src/pages/Home.tsx",
     "project_state.json",
     "scratch/component-selection.json",

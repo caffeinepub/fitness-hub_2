@@ -9,12 +9,16 @@ export default function Home() {
     <div>
       {/* Hero Section */}
       <section className="relative h-[600px] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent z-10" />
-        <img
-          src="/assets/348s (2).jpg"
-          alt="Bodyshape Fitness Gym"
-          className="absolute inset-0 w-full h-full object-cover"
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url(/assets/generated/86b32a34-8ef3-4143-8e81-c566b3678f98.png)',
+          }}
         />
+        {/* Overlay for readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/70 to-background/40 z-10" />
+        
         <div className="container mx-auto px-4 relative z-20">
           <div className="max-w-2xl">
             {/* 20th Anniversary Badge */}
@@ -65,7 +69,7 @@ export default function Home() {
                   <div className="absolute inset-0 bg-gradient-to-br from-accent-brand to-accent-secondary rounded-2xl transform -rotate-3"></div>
                   <img
                     src="/assets/556973191_25294936933424537_2300403285239686172_n.jpg"
-                    alt="Allen A. - Manager"
+                    alt="Allen D. - Manager"
                     className="relative rounded-2xl shadow-2xl w-full h-full object-cover border-4 border-background"
                   />
                 </div>
@@ -78,7 +82,7 @@ export default function Home() {
                     Manager
                   </Badge>
                   <h3 className="text-3xl md:text-4xl font-display font-black text-foreground">
-                    Allen A.
+                    Allen D.
                   </h3>
                 </div>
                 
@@ -263,27 +267,31 @@ export default function Home() {
               Celebrating <span className="text-accent-brand">20 Years</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-              Since 2005, Bodyshape Fitness has been Independence, Kentucky's trusted fitness destination. Thank you for two decades of support!
+              Since 2005, Bodyshape Fitness has been Independence's trusted fitness destination. Thank you for two decades of support!
             </p>
-            <div className="flex flex-wrap justify-center gap-8 text-center">
-              <div>
-                <div className="text-5xl font-display font-black text-accent-brand mb-2">20</div>
-                <div className="text-sm text-muted-foreground font-medium">Years of Service</div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+              <div className="text-center">
+                <div className="text-4xl md:text-5xl font-display font-black text-accent-brand mb-2">20</div>
+                <div className="text-sm text-muted-foreground">Years Strong</div>
               </div>
-              <div>
-                <div className="text-5xl font-display font-black text-accent-brand mb-2">24/7</div>
-                <div className="text-sm text-muted-foreground font-medium">Always Open</div>
+              <div className="text-center">
+                <div className="text-4xl md:text-5xl font-display font-black text-accent-brand mb-2">24/7</div>
+                <div className="text-sm text-muted-foreground">Always Open</div>
               </div>
-              <div>
-                <div className="text-5xl font-display font-black text-accent-brand mb-2">#1</div>
-                <div className="text-sm text-muted-foreground font-medium">In Northern KY</div>
+              <div className="text-center">
+                <div className="text-4xl md:text-5xl font-display font-black text-accent-brand mb-2">1000+</div>
+                <div className="text-sm text-muted-foreground">Happy Members</div>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl md:text-5xl font-display font-black text-accent-brand mb-2">#1</div>
+                <div className="text-sm text-muted-foreground">In Northern KY</div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Facility Descriptions */}
+      {/* Facility Features */}
       <section className="container mx-auto px-4 mb-20">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-display font-black mb-4">
@@ -294,79 +302,51 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <Card className="bg-card border-2 border-border hover:border-accent-brand/50 transition-all overflow-hidden group">
-            <div className="aspect-video overflow-hidden">
-              <img
-                src="/assets/348s (5).jpg"
-                alt="Strength Training Area"
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-              />
-            </div>
-            <CardContent className="p-6">
-              <h3 className="text-2xl font-bold mb-3 flex items-center gap-2">
-                <Dumbbell className="h-6 w-6 text-accent-brand" />
-                Strength Training
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Our comprehensive strength training area features premium equipment including plate-loaded machines, cable systems, and a full selection of free weights. From beginners to advanced lifters, we have everything you need to build strength and muscle.
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <Card className="bg-card border-2 border-border hover:border-accent-brand/50 transition-all hover:shadow-xl">
+            <CardContent className="p-6 text-center">
+              <div className="bg-gradient-to-br from-accent-brand to-accent-secondary p-4 rounded-2xl inline-block mb-4">
+                <Dumbbell className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="font-bold text-lg mb-2">Free Weights</h3>
+              <p className="text-sm text-muted-foreground">
+                Complete selection of dumbbells, barbells, and plates
               </p>
             </CardContent>
           </Card>
 
-          <Card className="bg-card border-2 border-border hover:border-accent-brand/50 transition-all overflow-hidden group">
-            <div className="aspect-video overflow-hidden">
-              <img
-                src="/assets/348s (1).jpg"
-                alt="Cardio Equipment"
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-              />
-            </div>
-            <CardContent className="p-6">
-              <h3 className="text-2xl font-bold mb-3 flex items-center gap-2">
-                <Zap className="h-6 w-6 text-accent-brand" />
-                Cardio Zone
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                State-of-the-art cardio equipment including treadmills, ellipticals, bikes, and rowing machines. Each machine features entertainment options to keep you motivated during your workout.
+          <Card className="bg-card border-2 border-border hover:border-accent-brand/50 transition-all hover:shadow-xl">
+            <CardContent className="p-6 text-center">
+              <div className="bg-gradient-to-br from-accent-brand to-accent-secondary p-4 rounded-2xl inline-block mb-4">
+                <Zap className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="font-bold text-lg mb-2">Cardio Equipment</h3>
+              <p className="text-sm text-muted-foreground">
+                Treadmills, bikes, ellipticals, and rowing machines
               </p>
             </CardContent>
           </Card>
 
-          <Card className="bg-card border-2 border-border hover:border-accent-brand/50 transition-all overflow-hidden group">
-            <div className="aspect-video overflow-hidden">
-              <img
-                src="/assets/348s (9).jpg"
-                alt="Functional Training Area"
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-              />
-            </div>
-            <CardContent className="p-6">
-              <h3 className="text-2xl font-bold mb-3 flex items-center gap-2">
-                <Target className="h-6 w-6 text-accent-brand" />
-                Functional Training
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Dedicated functional training space with battle ropes, kettlebells, medicine balls, and boxing equipment. Perfect for high-intensity workouts and functional fitness training.
+          <Card className="bg-card border-2 border-border hover:border-accent-brand/50 transition-all hover:shadow-xl">
+            <CardContent className="p-6 text-center">
+              <div className="bg-gradient-to-br from-accent-brand to-accent-secondary p-4 rounded-2xl inline-block mb-4">
+                <Target className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="font-bold text-lg mb-2">Strength Machines</h3>
+              <p className="text-sm text-muted-foreground">
+                State-of-the-art resistance and plate-loaded machines
               </p>
             </CardContent>
           </Card>
 
-          <Card className="bg-card border-2 border-border hover:border-accent-brand/50 transition-all overflow-hidden group">
-            <div className="aspect-video overflow-hidden">
-              <img
-                src="/assets/348s (3).jpg"
-                alt="Free Weights Area"
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-              />
-            </div>
-            <CardContent className="p-6">
-              <h3 className="text-2xl font-bold mb-3 flex items-center gap-2">
-                <Award className="h-6 w-6 text-accent-brand" />
-                Free Weights
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Extensive free weight area with dumbbells, barbells, benches, and squat racks. Whether you're into powerlifting or bodybuilding, we have the equipment you need.
+          <Card className="bg-card border-2 border-border hover:border-accent-brand/50 transition-all hover:shadow-xl">
+            <CardContent className="p-6 text-center">
+              <div className="bg-gradient-to-br from-accent-brand to-accent-secondary p-4 rounded-2xl inline-block mb-4">
+                <Users className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="font-bold text-lg mb-2">Functional Training</h3>
+              <p className="text-sm text-muted-foreground">
+                Dedicated space for functional fitness and boxing
               </p>
             </CardContent>
           </Card>
@@ -374,23 +354,24 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="container mx-auto px-4 mb-20">
-        <div className="bg-gradient-to-br from-accent-brand to-accent-secondary rounded-3xl p-8 md:p-12 text-white shadow-2xl">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+      <section className="bg-gradient-to-br from-accent-brand to-accent-secondary py-16 mb-20">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
             <div>
-              <Users className="h-12 w-12 mx-auto mb-4 opacity-90" />
+              <div className="text-4xl md:text-5xl font-display font-black mb-2">20+</div>
+              <div className="text-sm md:text-base opacity-90">Years Experience</div>
+            </div>
+            <div>
               <div className="text-4xl md:text-5xl font-display font-black mb-2">1000+</div>
-              <div className="text-lg opacity-90">Active Members</div>
+              <div className="text-sm md:text-base opacity-90">Active Members</div>
             </div>
             <div>
-              <Clock className="h-12 w-12 mx-auto mb-4 opacity-90" />
               <div className="text-4xl md:text-5xl font-display font-black mb-2">24/7</div>
-              <div className="text-lg opacity-90">Access Hours</div>
+              <div className="text-sm md:text-base opacity-90">Access Hours</div>
             </div>
             <div>
-              <Award className="h-12 w-12 mx-auto mb-4 opacity-90" />
-              <div className="text-4xl md:text-5xl font-display font-black mb-2">20</div>
-              <div className="text-lg opacity-90">Years Experience</div>
+              <div className="text-4xl md:text-5xl font-display font-black mb-2">100%</div>
+              <div className="text-sm md:text-base opacity-90">Satisfaction</div>
             </div>
           </div>
         </div>
@@ -400,28 +381,30 @@ export default function Home() {
       <section className="container mx-auto px-4 mb-20">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-display font-black mb-4">
-            Our <span className="text-accent-brand">Facility</span>
+            Tour Our <span className="text-accent-brand">Facility</span>
           </h2>
           <p className="text-xl text-muted-foreground">
-            Take a look inside Bodyshape Fitness
+            See what makes Bodyshape Fitness special
           </p>
         </div>
         <ImageGallery />
       </section>
 
-      {/* Testimonials Section */}
-      <TestimonialsSection />
-
-      {/* Call to Action */}
+      {/* Testimonials */}
       <section className="container mx-auto px-4 mb-20">
-        <div className="bg-gradient-to-br from-accent-brand to-accent-secondary rounded-3xl p-8 md:p-16 text-center text-white shadow-2xl">
-          <h2 className="text-4xl md:text-5xl font-display font-black mb-6">
+        <TestimonialsSection />
+      </section>
+
+      {/* CTA Section */}
+      <section className="container mx-auto px-4 mb-20">
+        <div className="bg-gradient-to-br from-accent-brand to-accent-secondary rounded-3xl p-8 md:p-12 text-center text-white shadow-2xl">
+          <h2 className="text-4xl md:text-5xl font-display font-black mb-4">
             Ready to Transform Your Life?
           </h2>
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-            Join Bodyshape Fitness today and experience the difference that 20 years of excellence makes. Your fitness journey starts here.
+            Join Independence's #1 gym and start your fitness journey today. 20 years of excellence, 24/7 access, and a community that supports your goals.
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-wrap gap-4 justify-center">
             <button className="px-8 py-4 bg-white text-accent-brand font-bold text-lg rounded-xl hover:bg-white/90 transition-colors shadow-xl">
               Join Now
             </button>

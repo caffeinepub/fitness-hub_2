@@ -1,40 +1,60 @@
 {
   "kind": "build_request",
-  "title": "Replace distorted manager photo with new uploaded image",
+  "title": "Replace cardio dog image with equipment and add new hero background",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-53",
-      "text": "Replace the distorted manager photo in the Meet the Manager section on the homepage (frontend/src/pages/Home.tsx) with the newly uploaded image (556973191_25294936933424537_2300403285239686172_n.jpg)",
+      "id": "REQ-58",
+      "text": "In the image gallery component (frontend/src/components/ImageGallery.tsx), remove the black French Bulldog workout image from the Cardio Zone section and replace it with a photo of actual cardio equipment from the facility",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-latest"
+          "user-current"
         ],
         "quotes": [
-          "that picture of me is pretty distorte can you use this picture"
+          "we need to remove the black dog picture in the cardio section and replace it with cardio equipment pic"
         ]
       },
       "acceptanceCriteria": [
-        "The Meet the Manager section displays the new uploaded photo (556973191_25294936933424537_2300403285239686172_n.jpg) instead of the current distorted 90s.jpg image",
-        "The photo is properly sized and positioned within the Meet the Manager section",
-        "The image path references the correct file in frontend/public/assets/generated/",
-        "The distorted 90s.jpg file is no longer referenced in the Meet the Manager section"
+        "The black French Bulldog image is removed from the Cardio Zone section in the image gallery",
+        "A real cardio equipment photo from Bodyshape Fitness facility is displayed in the Cardio Zone section",
+        "The image maintains consistent dimensions and styling with other gallery images"
+      ]
+    },
+    {
+      "id": "REQ-59",
+      "text": "Replace the homepage hero section background (frontend/src/pages/Home.tsx) with the uploaded Bodyshape Fitness 20 Year Anniversary image (86b32a34-8ef3-4143-8e81-c566b3678f98.png), applying fade/opacity effects to make it a visually striking centerpiece while maintaining readability of foreground content",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "user-current"
+        ],
+        "quotes": [
+          "need to add this picture in the background as the main picture of the website. you can fade it out or whatever needs done to make it the centerpiece"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The uploaded 20 Year Anniversary image (86b32a34-8ef3-4143-8e81-c566b3678f98.png) is set as the background for the hero section",
+        "The image is positioned and sized appropriately to serve as the main visual centerpiece",
+        "Fade/opacity effects are applied to ensure text and other content remain readable over the background",
+        "The styling is responsive and looks good on mobile and desktop viewports"
       ]
     }
   ],
   "constraints": [
-    "Do not modify the Meet the Manager biography text or phone number",
-    "Do not change the layout or styling of the Meet the Manager section beyond the photo replacement",
-    "Preserve the existing Meet the Manager section structure"
+    "Use the uploaded image file 86b32a34-8ef3-4143-8e81-c566b3678f98.png as a static asset in frontend/public/assets/generated/",
+    "Maintain existing hero section content layout and structure while updating the background styling",
+    "Ensure the background treatment does not compromise the readability of hero text and call-to-action elements"
   ],
   "nonGoals": [
-    "Editing any other sections of the homepage",
-    "Modifying other images in the image gallery",
-    "Changing the manager's name or contact information"
+    "Modifying the content or text of the hero section",
+    "Changing the image gallery layout or structure beyond replacing the specified image",
+    "Adding new sections or features to the homepage"
   ],
   "imageRequirements": {
-    "required": [],
+    "required": [
+      "Photo of cardio equipment at Bodyshape Fitness facility showing treadmills, ellipticals, or exercise bikes (cardio-equipment.dim_800x600.png)"
+    ],
     "edits": []
   }
 }
