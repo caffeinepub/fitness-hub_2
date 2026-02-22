@@ -1,35 +1,39 @@
 {
   "kind": "build_request",
-  "title": "Replace image gallery photos with new facility images",
+  "title": "Add member testimonials section with 6 reviews",
   "projectName": "Bodyshape Fitness",
   "priority": "normal",
   "requirements": [
     {
       "id": "REQ-1",
-      "text": "Replace the existing 12 facility photos in the ImageGallery component with the 6 uploaded images (enhanced_348s (7).jpg, enhanced_348s.jpg, enhanced_348s (8).jpg, enhanced_517620380_1306336444832099_8194069313658765999_n.jpg, enhanced_517940772_1306336431498767_8407149108597182872_n.jpg, enhanced_518270242_1306336364832107_8264580889139094172_n.jpg)",
+      "text": "Update the 'What Our Members Say' testimonials section to display 6 member reviews with the following content: Neil L. (September 2025, 5 stars) praising equipment superiority and Anthony; Sarah M. (August 2025, 5 stars) highlighting 24/7 access and clean equipment; Mike T. (July 2025, 5 stars) mentioning 5+ years membership and great community; Jennifer K. (June 2025, 5 stars) praising clean facility and 24/7 access; David R. (May 2025, 5 stars) noting incredible equipment selection and spotless facility; Amanda P. (April 2025, 5 stars) welcoming staff and modern equipment",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-5"
+          "msg-20"
         ],
         "quotes": [
-          "can you swap these correcte pictures out for the old pics"
+          "What Our Members Say - Don't just take our word for it - hear from our satisfied members who have transformed their lives at Bodyshape Fitness",
+          "5-Star Rated by Our Members"
         ]
       },
       "acceptanceCriteria": [
-        "The ImageGallery component displays the 6 new uploaded facility images",
-        "Old gallery images are removed from the component",
-        "The grid layout adjusts appropriately for 6 images instead of 12",
-        "Images maintain responsive behavior and hover effects",
-        "Modal dialog still functions for enlarged image views"
+        "Section displays heading 'What Our Members Say' with subtitle about satisfied members at Bodyshape Fitness",
+        "All 6 testimonials are displayed with complete text, reviewer names, months, and 5-star ratings",
+        "Section includes '5-Star Rated by Our Members' indicator",
+        "Reviews maintain chronological order from September 2025 to April 2025"
       ]
     }
   ],
-  "constraints": [],
+  "constraints": [
+    "Preserve existing TestimonialsSection component structure",
+    "Update reviews.ts data file with new testimonial content",
+    "Maintain consistent styling with current testimonials display"
+  ],
   "nonGoals": [
-    "Modifying the ImageGallery component structure or styling beyond image replacement",
-    "Changing other page components or layouts",
-    "Adding new images beyond the 6 uploaded"
+    "Adding backend functionality for testimonials",
+    "Creating testimonial submission forms",
+    "Implementing testimonial moderation features"
   ],
   "imageRequirements": {
     "required": [],

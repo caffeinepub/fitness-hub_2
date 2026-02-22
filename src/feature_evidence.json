@@ -1,24 +1,4 @@
 {
   "kind": "feature_evidence_report",
-  "features": [
-    {
-      "featureId": "feature-replace-the-existing-12-facility-photos-in-the-imagegallery-component-with-the-6-uploaded-images-enhanced-348s-7-jpg-enhanced-348s-jpg-enhanced-348s-8-jpg-enhanced-517620380-1306336444832099-8194069313658765999-n-jpg-enhanced-517940772-1306336431498767-8407149108597182872-n-jpg-enhanced-518270242-1306336364832107-8264580889139094172-n-jpg",
-      "featureTitle": "Replace the existing 12 facility photos in the ImageGallery component with the 6 uploaded images (enhanced_348s (7).jpg, enhanced_348s.jpg, enhanced_348s (8).jpg, enhanced_517620380_1306336444832099_8194069313658765999_n.jpg, enhanced_517940772_1306336431498767_8407149108597182872_n.jpg, enhanced_518270242_1306336364832107_8264580889139094172_n.jpg)",
-      "files": [
-        "frontend/src/components/ImageGallery.tsx"
-      ],
-      "components": [
-        "blob-storage@4.0.0",
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-1"
-      ],
-      "confidence": "high"
-    }
-  ]
+  "features": []
 }

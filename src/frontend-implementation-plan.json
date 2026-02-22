@@ -1,23 +1,27 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Replace image gallery photos with new facility images",
+  "title": "Add member testimonials section with 6 reviews",
   "requirements": [
     {
       "id": "REQ-1",
-      "summary": "Replace the existing 12 facility photos in the ImageGallery component with the 6 uploaded images",
+      "summary": "Update testimonials section to display 6 specific member reviews with names, dates, ratings, and detailed feedback",
       "acceptanceCriteria": [
-        "The ImageGallery component displays the 6 new uploaded facility images",
-        "Old gallery images are removed from the component",
-        "The grid layout adjusts appropriately for 6 images instead of 12",
-        "Images maintain responsive behavior and hover effects",
-        "Modal dialog still functions for enlarged image views"
+        "Section displays heading 'What Our Members Say' with subtitle about satisfied members at Bodyshape Fitness",
+        "All 6 testimonials are displayed with complete text, reviewer names, months, and 5-star ratings",
+        "Section includes '5-Star Rated by Our Members' indicator",
+        "Reviews maintain chronological order from September 2025 to April 2025"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/ImageGallery.tsx",
+          "path": "frontend/src/data/reviews.ts",
           "operation": "modify",
-          "description": "Update the image array to reference the 6 new facility images: enhanced_348s (7).jpg, enhanced_348s.jpg, enhanced_348s (8).jpg, enhanced_517620380_1306336444832099_8194069313658765999_n.jpg, enhanced_517940772_1306336431498767_8407149108597182872_n.jpg, and enhanced_518270242_1306336364832107_8264580889139094172_n.jpg. Remove all 12 old image references. Ensure the grid layout, hover effects, and modal dialog continue to function correctly with the reduced image count."
+          "description": "Replace existing review data with 6 new testimonials: Neil L. (September 2025) praising equipment superiority and Anthony; Sarah M. (August 2025) highlighting 24/7 access and clean equipment; Mike T. (July 2025) mentioning 5+ years membership and great community; Jennifer K. (June 2025) praising clean facility and 24/7 access; David R. (May 2025) noting incredible equipment selection and spotless facility; Amanda P. (April 2025) welcoming staff and modern equipment. All reviews are 5-star ratings. Maintain existing TypeScript interface structure with reviewer, rating, text, and date fields."
+        },
+        {
+          "path": "frontend/src/components/TestimonialsSection.tsx",
+          "operation": "modify",
+          "description": "Update component to ensure heading reads 'What Our Members Say' with subtitle about satisfied members at Bodyshape Fitness. Add '5-Star Rated by Our Members' indicator. Verify the component renders all 6 reviews from reviews.ts data file in chronological order (September 2025 to April 2025). Maintain existing responsive grid layout and star rating display. Preserve current styling approach consistent with the rest of the application."
         }
       ]
     }

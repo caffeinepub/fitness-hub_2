@@ -1,21 +1,27 @@
 {
   "schemaVersion": "1.0.0",
   "projectStateVersion": 3,
-  "summary": "New project",
+  "summary": "Gym website (Bodyshape Fitness) with member testimonials section",
   "architectural_notes": [],
   "known_issues": [],
-  "isFixRequest": true,
-  "existing_features": [
+  "isFixRequest": false,
+  "existing_features": [],
+  "new_feature_requests": [
     {
-      "id": "feature-replace-the-existing-12-facility-photos-in-the-imagegallery-component-with-the-6-uploaded-images-enhanced-348s-7-jpg-enhanced-348s-jpg-enhanced-348s-8-jpg-enhanced-517620380-1306336444832099-8194069313658765999-n-jpg-enhanced-517940772-1306336431498767-8407149108597182872-n-jpg-enhanced-518270242-1306336364832107-8264580889139094172-n-jpg",
-      "title": "Replace the existing 12 facility photos in the ImageGallery component with the 6 uploaded images (enhanced_348s (7).jpg, enhanced_348s.jpg, enhanced_348s (8).jpg, enhanced_517620380_1306336444832099_8194069313658765999_n.jpg, enhanced_517940772_1306336431498767_8407149108597182872_n.jpg, enhanced_518270242_1306336364832107_8264580889139094172_n.jpg)",
+      "id": "AR-1",
+      "summary": "Add 'What Our Members Say' testimonials section with 6 member reviews",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Update the 'What Our Members Say' testimonials section to display 6 member reviews with the following content: Neil L. (September 2025, 5 stars) praising equipment superiority and Anthony; Sarah M. (August 2025, 5 stars) highlighting 24/7 access and clean equipment; Mike T. (July 2025, 5 stars) mentioning 5+ years membership and great community; Jennifer K. (June 2025, 5 stars) praising clean facility and 24/7 access; David R. (May 2025, 5 stars) noting incredible equipment selection and spotless facility; Amanda P. (April 2025, 5 stars) welcoming staff and modern equipment",
       "reqIds": [
         "REQ-1"
       ],
-      "version": 1
+      "status": "pending"
     }
   ],
-  "new_feature_requests": [],
   "projectName": "Bodyshape Fitness",
   "clarification_mode": "instant",
   "clarification_rounds": 0
